@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&family=Rancho&display=swap');
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --primary-color: #32A99A;
+  --secondary-color: #A6CE39;
+  --light-secondary-color: #d5df31;
+  --black-color: #070707;
+  
+}
