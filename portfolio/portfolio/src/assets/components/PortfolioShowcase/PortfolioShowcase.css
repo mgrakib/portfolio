@@ -1,0 +1,11 @@
+.projectIconDiv{
+    @apply w-[45px] h-[45px] border-2 border-primary-color rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 duration-300 cursor-pointer
+}
+
+.projectIcon{
+    @apply text-primary-color text-[20px] font-bold
+}
+
+.overlayDiv{
+    @apply w-full h-full absolute  top-0 left-0 bg-[rgb(214,60,68,.85)] opacity-0 group-hover:opacity-100 duration-500 flex items-center
+}

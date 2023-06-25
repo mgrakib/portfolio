@@ -1,0 +1,56 @@
+[
+    {
+        "id":1,
+        "name":"MG Rakib",
+        "image":"../src/assets/client/client1.jpg",
+        "countery":"Bangladesh",
+        "ratting":5,
+        "feedback":"Good job! Very responsible seller. Fast response. Thank you!"
+
+    },
+    {
+        "id":2,
+        "name":"Rupa",
+        "image":"../src/assets/client/client2.jpg",
+        "countery":"Bangladesh",
+        "ratting":5,
+        "feedback":"Good job! Very responsible seller. Fast response. Thank you!"
+
+    },
+    {
+        "id":3,
+        "name":"Toma",
+        "image":"../src/assets/client/client3.jpg",
+        "countery":"Bangladesh",
+        "ratting":3,
+        "feedback":"Good job! Very responsible seller. Fast response. Thank you!"
+
+    },
+    {
+        "id":4,
+        "name":"Mrinomoi",
+        "image":"../src/assets/client/client4.jpg",
+        "countery":"Bangladesh",
+        "ratting":4.5,
+        "feedback":"Good job! Very responsible seller. Fast response. Thank you!"
+
+    },
+    {
+        "id":5,
+        "name":"Toru",
+        "image":"../src/assets/client/client5.jpg",
+        "countery":"Bangladesh",
+        "ratting":5,
+        "feedback":"Good job! Very responsible seller. Fast response. Thank you!"
+
+    },
+    {
+        "id":6,
+        "name":"Mayaboti",
+        "image":"../src/assets/client/client6.jpg",
+        "countery":"Bangladesh",
+        "ratting":4.5,
+        "feedback":"Good job! Very responsible seller. Fast response. Thank you!"
+
+    }
+]

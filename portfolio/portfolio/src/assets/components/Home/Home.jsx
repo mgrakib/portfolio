@@ -13,7 +13,7 @@ const Home = () => {
 			id='home'
 			className='w-full pt-28'
 		>
-			<div className='py-10'>
+			<div >
 				<Container>
 					<div className='flex justify-between mb-[40px]'>
 						<div className='w-1/2'>

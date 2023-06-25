@@ -9,12 +9,16 @@ import { useState } from "react";
 
 const NavBar = () => {
 	const [isActive, setIsActive] = useState('home');
+	console.log(isActive)
 	return (
 		<div className=' w-full bg-white shadow-md fixed top-0 left-0 z-50'>
 			<Container>
 				<div className='flex items-center justify-between gap-4'>
 					<div className=''>
-						<Link to="home" className="cursor-pointer">
+						<Link
+							to='home'
+							className='cursor-pointer'
+						>
 							<img
 								src={img}
 								alt=''
@@ -24,6 +28,7 @@ const NavBar = () => {
 					</div>
 					<div className='flex items-center gap-8 list-none'>
 						<Link
+							onClick={() => setIsActive("home")}
 							className={`${
 								isActive === "home" ? "active" : "default"
 							}`}
@@ -32,6 +37,7 @@ const NavBar = () => {
 							<li>Home</li>
 						</Link>
 						<Link
+							onClick={() => setIsActive("about")}
 							className={`${
 								isActive === "about" ? "active" : "default"
 							}`}
@@ -40,6 +46,7 @@ const NavBar = () => {
 							<li>About</li>
 						</Link>
 						<Link
+							onClick={() => setIsActive("experience")}
 							className={`${
 								isActive === "experience" ? "active" : "default"
 							}`}
@@ -48,10 +55,13 @@ const NavBar = () => {
 							<li>Experience</li>
 						</Link>
 						<Link
+							onClick={() => setIsActive("portfolioShowcase")}
 							className={`${
-								isActive === "works" ? "active" : "default"
+								isActive === "portfolioShowcase"
+									? "active"
+									: "default"
 							}`}
-							to='works'
+							to='portfolioShowcase'
 						>
 							<li>Works</li>
 						</Link>

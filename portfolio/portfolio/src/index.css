@@ -6,6 +6,7 @@ html{
 
 body{
   font-family: 'Raleway', sans-serif;
+  background-color: #FAF9FF
 }
 
 @tailwind base;
