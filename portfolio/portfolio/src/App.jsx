@@ -1,13 +1,13 @@
 /** @format */
 
 import "./App.css";
-import NavBar from "./assets/components/NavBar/NavBar";
-
 import About from "./assets/components/About/About";
-import Home from "./assets/components/Home/Home";
 import Experience from "./assets/components/Experience/Experience";
+import FeedBack from "./assets/components/FeedBack/FeedBack";
+import Home from "./assets/components/Home/Home";
+import NavBar from "./assets/components/NavBar/NavBar";
 import PortfolioShowcase from "./assets/components/PortfolioShowcase/PortfolioShowcase";
-import FeedBack from "./assets/FeedBack/FeedBack";
+
 
 function App() {
 	return (

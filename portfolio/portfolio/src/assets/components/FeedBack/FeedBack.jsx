@@ -6,11 +6,6 @@ import "./FeedBack.css";
 import { FaQuoteRight, FaRegStar, FaStar } from "react-icons/fa";
 import feedback from '../../../../public/feedback.json'
 
-import client1 from '../client/client1.jpg'
-import client2 from '../client/client2.jpg'
-import client3 from '../client/client3.jpg'
-import client4 from '../client/client4.jpg'
-import client5 from '../client/client5.jpg'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 

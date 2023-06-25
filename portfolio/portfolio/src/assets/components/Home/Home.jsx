@@ -22,7 +22,7 @@ const Home = () => {
 									Hi, I am
 								</p>
 								<h1 className='text-[75px] font-[800] leading-[74px] mb-[25px]'>
-									Iqbal Tasif
+									Md. Golam Rakib
 								</h1>
 
 								<div>
