@@ -1,7 +1,7 @@
 import Container from '../Container/Container';
 import './About.css'
 
-import img from "../../img/about_pic.png";
+import img from "../../assets/img/about_pic.png";
 import { FiUser } from "react-icons/fi";
 import { BsTelephone, BsEnvelopeAt } from "react-icons/bs";
 

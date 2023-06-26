@@ -4,7 +4,7 @@ import Container from "../Container/Container";
 import SectionTitle from "../SectionTitle/SectionTitle";
 import "./FeedBack.css";
 import { FaQuoteRight, FaRegStar, FaStar } from "react-icons/fa";
-import feedback from '../../../../public/feedback.json'
+import feedback from '../../../public/feedback.json'
 
 
 import { Swiper, SwiperSlide } from "swiper/react";

@@ -1,11 +1,11 @@
 import Container from "../Container/Container";
 import SectionTitle from "../SectionTitle/SectionTitle";
-import project1 from '../../projects/project1.png'
-import project2 from '../../projects/project2.png'
-import project3 from '../../projects/project3.png'
-import project4 from '../../projects/project4.png'
-import project5 from '../../projects/project5.png'
-import project6 from '../../projects/project6.png'
+import project1 from '../../assets/projects/project1.png'
+import project2 from '../../assets/projects/project2.png'
+import project3 from '../../assets/projects/project3.png'
+import project4 from '../../assets/projects/project4.png'
+import project5 from '../../assets/projects/project5.png'
+import project6 from '../../assets/projects/project6.png'
 
 import { LiaExternalLinkAltSolid, LiaSearchPlusSolid } from "react-icons/lia";
 import './PortfolioShowcase.css'

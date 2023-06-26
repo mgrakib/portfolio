@@ -2,11 +2,11 @@ import Container from '../Container/Container';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import './Experience.css'
 import { FaReact } from "react-icons/fa";
-import html from '../../icons/html.png'
-import css from '../../icons/css.png'
-import js from "../../icons/js.png";
-import node from "../../icons/node.png";
-import mongodb from "../../icons/mongodb.png";
+import html from "../../assets/icons/html.png";
+import css from '../../assets/icons/css.png'
+import js from "../../assets/icons/js.png";
+import node from "../../assets/icons/node.png";
+import mongodb from "../../assets/icons/mongodb.png";
 
 const Experience = () => {
     return (

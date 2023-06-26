@@ -1,7 +1,7 @@
 /** @format */
 
 import { Link } from "react-scroll";
-import img from "../../img/iqbaltasif-3.png";
+import img from "../../assets/img/iqbaltasif-3.png";
 import Container from "../Container/Container";
 import './NavBar.css'
 import { useState } from "react";

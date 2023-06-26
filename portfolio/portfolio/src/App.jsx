@@ -1,12 +1,13 @@
 /** @format */
 
 import "./App.css";
-import About from "./assets/components/About/About";
-import Experience from "./assets/components/Experience/Experience";
-import FeedBack from "./assets/components/FeedBack/FeedBack";
-import Home from "./assets/components/Home/Home";
-import NavBar from "./assets/components/NavBar/NavBar";
-import PortfolioShowcase from "./assets/components/PortfolioShowcase/PortfolioShowcase";
+import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
+import FeedBack from "./components/FeedBack/FeedBack";
+import Home from "./components/Home/Home";
+import MyServices from "./components/MyServices/MyServices";
+import NavBar from "./components/NavBar/NavBar";
+import PortfolioShowcase from "./components/PortfolioShowcase/PortfolioShowcase";
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
 				<Experience />
 				<PortfolioShowcase />
 				<FeedBack />
+				<MyServices />
 			</div>
 		</>
 	);

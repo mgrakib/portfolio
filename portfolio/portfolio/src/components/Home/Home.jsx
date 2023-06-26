@@ -4,7 +4,7 @@ import { BiMessageRoundedDots, BiSupport } from "react-icons/bi";
 import { IoDiamondOutline } from "react-icons/io5";
 import './Home.css'
 
-import img from '../../img/iqbaltasif-1.jpg'
+import img from "../../assets/img/iqbaltasif-1.jpg";
 
 
 const Home = () => {
