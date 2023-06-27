@@ -10,10 +10,11 @@ import img from "../../assets/img/iqbaltasif-1.jpg";
 const Home = () => {
     return (
 		<section
-			id='home'
+			// id='home'
 			className='w-full pt-28'
+			name='home'
 		>
-			<div >
+			<div>
 				<Container>
 					<div className='flex justify-between mb-[40px]'>
 						<div className='w-1/2'>

@@ -1,0 +1,3 @@
+.contact-input{
+    @apply w-full p-3 border-b focus:border-dotted outline-none focus:shadow-[0px_0px_2px_0_rgba(0,0,0,.3)] border-[#666] 
+}

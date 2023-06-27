@@ -2,6 +2,8 @@
 
 import "./App.css";
 import About from "./components/About/About";
+import ContractMe from "./components/ContractMe/ContractMe";
+import Effect from "./components/Effect/Effect";
 import Experience from "./components/Experience/Experience";
 import FeedBack from "./components/FeedBack/FeedBack";
 import Home from "./components/Home/Home";
@@ -15,13 +17,17 @@ function App() {
 		<>
 			<NavBar />
 
-			<div>
+			<div className="relative ">
+				<Effect />
 				<Home />
 				<About />
 				<Experience />
 				<PortfolioShowcase />
 				<FeedBack />
 				<MyServices />
+				<ContractMe />
+
+				
 			</div>
 		</>
 	);

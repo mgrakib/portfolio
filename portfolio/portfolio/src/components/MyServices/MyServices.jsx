@@ -12,7 +12,7 @@ import service3 from '../../assets/services/services3.webp'
 const MyServices = () => {
     return (
 		<div
-			id='feedback'
+			id='services'
 			className='w-full  pt-28'
 		>
 			<Container>
@@ -25,13 +25,12 @@ const MyServices = () => {
 
 				<div className='grid grid-cols-3'>
 					<div className='px-5'>
-						<div className='border border-secondary-color  group'>
-							<div className="overflow-hidden">
+						<div className='border border-gray-300 hover:border-secondary-color  group'>
+							<div className='overflow-hidden'>
 								<img
 									src={service1}
-                                    alt=''
-                                     className="group-hover:rotate-2 group-hover:scale-105 duration-300"
-                                   
+									alt=''
+									className='group-hover:rotate-2 group-hover:scale-105 duration-300'
 								/>
 							</div>
 
@@ -56,12 +55,12 @@ const MyServices = () => {
 						</div>
 					</div>
 					<div className='px-5'>
-						<div className='border border-secondary-color group'>
-							<div className="overflow-hidden">
+						<div className='border border-gray-300 hover:border-secondary-color group'>
+							<div className='overflow-hidden'>
 								<img
 									src={service2}
 									alt=''
-                                     className="group-hover:rotate-2 group-hover:scale-105 duration-300"
+									className='group-hover:rotate-2 group-hover:scale-105 duration-300'
 								/>
 							</div>
 
@@ -86,12 +85,12 @@ const MyServices = () => {
 						</div>
 					</div>
 					<div className='px-5'>
-						<div className='border border-secondary-color group'>
-							<div className="overflow-hidden">
+						<div className='border border-gray-300 hover:border-secondary-color group'>
+							<div className='overflow-hidden'>
 								<img
 									src={service3}
 									alt=''
-                                     className="group-hover:rotate-2 group-hover:scale-105 duration-300"
+									className='group-hover:rotate-2 group-hover:scale-105 duration-300'
 								/>
 							</div>
 

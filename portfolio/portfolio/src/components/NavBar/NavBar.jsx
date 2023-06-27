@@ -1,6 +1,17 @@
 /** @format */
 
-import { Link } from "react-scroll";
+import * as Scroll from "react-scroll";
+import {
+	Link,
+	Button,
+	Element,
+	Events,
+	animateScroll as scroll,
+	scrollSpy,
+	scroller,
+} from "react-scroll";
+
+
 import img from "../../assets/img/iqbaltasif-3.png";
 import Container from "../Container/Container";
 import './NavBar.css'
@@ -16,8 +27,13 @@ const NavBar = () => {
 				<div className='flex items-center justify-between gap-4'>
 					<div className=''>
 						<Link
+							onClick={() => setIsActive("home")}
 							to='home'
 							className='cursor-pointer'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
 						>
 							<img
 								src={img}
@@ -33,6 +49,10 @@ const NavBar = () => {
 								isActive === "home" ? "active" : "default"
 							}`}
 							to='home'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
 						>
 							<li>Home</li>
 						</Link>
@@ -42,6 +62,11 @@ const NavBar = () => {
 								isActive === "about" ? "active" : "default"
 							}`}
 							to='about'
+							activeClass='active'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
 						>
 							<li>About</li>
 						</Link>
@@ -62,22 +87,36 @@ const NavBar = () => {
 									: "default"
 							}`}
 							to='portfolioShowcase'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
 						>
 							<li>Works</li>
 						</Link>
 						<Link
+							onClick={() => setIsActive("services")}
 							className={`${
 								isActive === "services" ? "active" : "default"
 							}`}
 							to='services'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
 						>
 							<li>Services</li>
 						</Link>
 						<Link
+							onClick={() => setIsActive("contact")}
 							className={`${
 								isActive === "contact" ? "active" : "default"
 							}`}
 							to='contact'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
 						>
 							<li>Contact</li>
 						</Link>
@@ -86,6 +125,10 @@ const NavBar = () => {
 								isActive === "demo" ? "active" : "default"
 							}`}
 							to='demo'
+							spy={true}
+							smooth={true}
+							offset={-70}
+							duration={500}
 						>
 							<li>Demos</li>
 						</Link>

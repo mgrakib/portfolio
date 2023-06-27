@@ -8,7 +8,7 @@ import { BsTelephone, BsEnvelopeAt } from "react-icons/bs";
 const About = () => {
     return (
 		<div
-			id='about'
+			name='about'
 			className='w-full h-[100vh]  pt-28'
 		>
 			<Container>
