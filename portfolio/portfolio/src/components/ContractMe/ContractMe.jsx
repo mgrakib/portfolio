@@ -2,8 +2,13 @@ import Container from '../Container/Container';
 import SectionTitle from '../SectionTitle/SectionTitle';
 import './ContractMe.css'
 import { CiLocationOn } from "react-icons/ci";
+import AOS from "aos";
+import "aos/dist/aos.css"; 
+// ..
+AOS.init();
 
 const ContractMe = () => {
+	
     return (
 		<div
 			id='contact'

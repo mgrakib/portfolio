@@ -5,6 +5,7 @@ import { IoDiamondOutline } from "react-icons/io5";
 import './Home.css'
 
 import img from "../../assets/img/iqbaltasif-1.jpg";
+import { FaGithubAlt } from "react-icons/fa";
 
 
 const Home = () => {
@@ -32,11 +33,24 @@ const Home = () => {
 									</h4>
 								</div>
 
-								<p className='leading-[28px] text-black-color'>
-									Professional WordPress wooCommerce Shopify
-									Wix Expert working in different marketplaces
-									with 4 years of experience
-								</p>
+								<div>
+									<p className='leading-[28px] text-black-color inline-block'>
+										I'm a full-stack developer specialised
+										in frontend and backend development for
+										scalable web apps.I have made a variety
+										of Mern Stack Applications. Want to know
+										how I may help your project? Check out
+										my projects from my GitHub Profile.{" "}
+										<a
+											href='#'
+											className='inline-block '
+										>
+											<span className="flex items-center gap-2">
+												<FaGithubAlt /> Profile
+											</span>
+										</a>
+									</p>
+								</div>
 							</div>
 
 							<div className='w-full'>
