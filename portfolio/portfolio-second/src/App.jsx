@@ -66,7 +66,7 @@ function App() {
 						<div
 							className={` ${
 								isOpen && "active-link"
-							} relative overflow-hidden w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px]`}
+							} relative overflow-y-scroll w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px]`}
 						>
 							<div className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 ${isOpen && 'opacity-70'}`}></div>
 							{/* fixex bd  */}
