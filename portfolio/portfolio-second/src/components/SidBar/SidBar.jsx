@@ -66,10 +66,7 @@ const SidBar = () => {
 			</div>
 
 			{/* scroll bar  */}
-			<div
-				id='scrollbar'
-				className='w-full h-[calc(100vh-30px)] overflow-y-auto block  px-[15px]'
-			>
+			<div className='w-full h-[calc(100vh-30px)] overflow-y-auto block  px-[15px] scrollbar'>
 				<div
 					style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
 					className='pt-[240px]  pb-[50px] w-full  text-black scroll-div'

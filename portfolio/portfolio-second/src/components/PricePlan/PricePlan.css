@@ -1,0 +1,39 @@
+/** @format */
+
+.available, .unavailable {
+	position: relative;
+	color: var(--gray-color);
+	margin-bottom: 10px;
+	/* display: inline-block; */
+}
+
+.available::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f00c";
+    font-size: 10px;
+	position: absolute;
+	color: var(--brand-color);
+	left: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+
+.unavailable {
+	position: relative;
+	color: var(--gray-color/23);
+	margin-bottom: 10px;
+	/* display: inline-block; */
+}
+.unavailable::after {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	content: "\f00d";
+    font-size: 10px;
+	position: absolute;
+	color: var(--brand-color);
+	left: -15px;
+	top: 50%;
+	transform: translateY(-50%);
+}

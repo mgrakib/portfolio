@@ -1,8 +1,6 @@
 /** @format */
 
-#scrollbar::-webkit-scrollbar {
-	width: 0;
-}
+
 
 .scroll-div li {
 	display: flex;
