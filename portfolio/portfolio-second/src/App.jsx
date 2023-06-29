@@ -21,6 +21,7 @@ function App() {
 				<div className='flex flex-nowrap relative '>
 					<SidBar />
 
+					{/* nav bar  */}
 					<div
 						className={`bg-[#20202a] w-[230px] h-[calc(100vh-30px)] z-[999] -right-[150px] absolute duration-500 ${
 							isOpen && "active-link"
@@ -40,9 +41,17 @@ function App() {
 									/>
 								</span>
 							</div>
+
+							<div
+								className={` w-[200px] text-[#fafafc] absolute  overflow-hidden top-[200px] text-[13px] font-[500] -left-[62px] opacity-100 leading-3 duration-500 rotate-90 ${
+									isOpen && "opacity-[0]"}`}
+							>
+								Home
+							</div>
 						</div>
 					</div>
 
+					{/* main contente  */}
 					<div
 						className={` ${
 							isOpen && "active-link"
