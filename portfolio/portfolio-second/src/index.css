@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Poppins:wght@300;400;500;600;800&display=swap');
+
+
+:root {
+  --primary-font: Poppins, sans-serif;
+  --secondary-font: Courier-Prime, monospace;
+
+  --primary-bg-color : #191923;
+  --secondary-bg-color : #20202a;
+  --gradiant-dark-first-color : rgba(37,37,50,.98);
+  --gradiant-dark-second-color : rgba(35,35,45,.98);
+  --gradiant-light-first-color : #2d2d3a;
+  --gradiant-light-second-color : #2b2b35;
+  --white-color : #fff;
+  --brand-color : #ffc107;
+  --gray-color : #8c8c8e;
+  --light-gray-color : #cacace ;
+
+  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body{
+  font-family: var(--primary-font);
+  background-color: var(--primary-bg-color)
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.text-small{
+  @apply text-[13px]
+}
+
+.light-gradiant {
+  @apply from-gradiant-dark-first-color to-gradiant-dark-second-color
+}
+
+h6{
+  font-size: 13px;
+  font-weight: 400;
+  color: white;
+}
