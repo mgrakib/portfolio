@@ -5,10 +5,17 @@ import { IoDiamondOutline } from "react-icons/io5";
 import './Home.css'
 
 import img from "../../assets/img/iqbaltasif-1.jpg";
-import { FaGithubAlt } from "react-icons/fa";
+import { FaChevronRight, FaGithubAlt } from "react-icons/fa";
 
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const Home = () => {
+
+	 const [text] = useTypewriter({
+			words: ["Back-End Development", "From", "Typewriter", "Hook!"],
+			loop: 3,
+			onLoopDone: () => console.log(`loop completed after 3 runs.`),
+		});
     return (
 		<section
 			// id='home'
@@ -28,9 +35,22 @@ const Home = () => {
 								</h1>
 
 								<div>
-									<h4 className='flex items-center text-[20px] mb-[12px] font-[700]'>
-										WordPress | Shopify | Wix Expert
+									<h4 className='flex items-center text-4xl font-[700]'>
+										I'm Specialized in
 									</h4>
+
+									<div>
+										<h5 className='text-3xl py-2 font-bold bg-gradient-to-r from-[#A2F016] to-[#37CC52] text-transparent bg-clip-text'>
+											<span>
+												<FaChevronRight className='inline-block text-gray-600' />
+												{text}
+											</span>
+											<Cursor
+												cursorColor='black'
+												cursorStyle="_"
+											/>
+										</h5>
+									</div>
 								</div>
 
 								<div>
@@ -45,7 +65,7 @@ const Home = () => {
 											href='#'
 											className='inline-block '
 										>
-											<span className="flex items-center gap-2">
+											<span className='flex items-center gap-2'>
 												<FaGithubAlt /> Profile
 											</span>
 										</a>
