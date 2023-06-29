@@ -7,7 +7,7 @@ import AuthPorvider from './AuthPorvider/AuthPorvider.jsx'
 ReactDOM.createRoot(document.getElementById("root")).render(
 	<React.StrictMode>
 		<AuthPorvider>
-			<div className='p-[15px]'>
+			<div >
 				<App />
 			</div>
 		</AuthPorvider>

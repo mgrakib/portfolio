@@ -25,6 +25,10 @@
   box-sizing: border-box
 }
 
+html{
+  scroll-behavior: smooth !important;
+}
+
 body{
   font-family: var(--primary-font);
   background-color: var(--primary-bg-color)
