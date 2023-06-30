@@ -83,14 +83,14 @@ const NavBar = () => {
 							</NavLink>
 						</li>
 						<li onClick={() => setShowNavItem(!showNavItem)}>
-							<NavLink
+							<div
 								
 								className={`${
 									isOpen && "active-nav-link"
-								} nav-items delay-[0.15s]`}
+								} nav-items delay-[0.15s] cursor-pointer`}
 							>
 								Portfolio
-							</NavLink>
+							</div>
 
 							{/* inside nav  */}
 							<ul
