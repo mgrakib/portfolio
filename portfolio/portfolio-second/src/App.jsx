@@ -2,7 +2,7 @@
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 
-import { Outlet } from "react-router-dom";
+import { Link, NavLink, Outlet } from "react-router-dom";
 import "./App.css";
 import SidBar from "./components/SidBar/SidBar";
 
@@ -61,13 +61,79 @@ function App() {
 								Home
 							</div>
 						</div>
+
+						<div className='h-full  w-full flex items-start mt-3'>
+							<ul className='mb-[60px] w-full text-gray-color'>
+								<li>
+									<NavLink
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.05s]`}
+									>
+										Home
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.1s]`}
+									>
+										Home
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.15s]`}
+									>
+										Home
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.20s]`}
+									>
+										Home
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.25s]`}
+									>
+										Home
+									</NavLink>
+								</li>
+								<li>
+									<NavLink
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.30s] border-t border-gray-color w-full mt-[12px] pt-[24px]`}
+									>
+										Light Version
+									</NavLink>
+								</li>
+							</ul>
+						</div>
 					</div>
 
-					<div className='relative  w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px] bg-red-500'>
+					{/* Outlet */}
+					<div>
 						<div
-							className={`relative overflow-y-scroll w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px] bg-red-500`}
+							className={` ${
+								isOpen && "active-link"
+							} relative overflow-y-scroll w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px]`}
 						>
-							<div className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${isOpen && 'opacity-70 pointer-events-auto'}`}></div>
+							<div
+								className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${
+									isOpen && "opacity-70 pointer-events-auto"
+								}`}
+							></div>
 							{/* fixex bd  */}
 							<div
 								style={{ backgroundImage: `url(${bg})` }}
