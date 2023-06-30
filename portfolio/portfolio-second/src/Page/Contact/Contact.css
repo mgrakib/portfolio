@@ -1,0 +1,15 @@
+.input-container {
+    @apply h-[50px] pl-[65px] pr-[15px] w-full border-none text-[#fafafc]   flex items-center relative mb-[30px] shadow-[inset_0_1px_4px_0_rgba(15,15,20,.1)]
+}
+
+.textarea-container {
+    @apply h-[150px] pl-[65px] pr-[15px] w-full border-none text-[#fafafc]   flex items-center relative mb-[30px] shadow-[inset_0_1px_4px_0_rgba(15,15,20,.1)]
+}
+
+.input-label{
+    @apply h-[50px] w-[50px] bg-primary-bg-color absolute left-0 top-0 flex items-center justify-center text-gray-color text-[14px]
+}
+
+.input-field{
+    @apply w-full h-full bg-transparent outline-none border-none placeholder:text-gray-color
+}
