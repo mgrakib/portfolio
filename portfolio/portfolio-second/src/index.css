@@ -62,16 +62,15 @@ body{
 
 
 h1{
-  font-size: 51px;
-  font-weight: 800;
-  line-height: 1.2;
+  @apply md:text-[51px] text-[44px] font-[800] leading-[1.2] 
+  
 }
 
 
 h4{
-  font-size: 22px;
-  font-size: 800;
+  @apply text-[18px] md:text-[22px] font-[800]
 }
+
 h5{
   font-size: 14px;
   font-weight: 600;

@@ -8,6 +8,7 @@ const AuthPorvider = ({ children }) => {
 	const [routeName, setRouteName] = useState("Home");
 	let [isOpenModal, setIsOpenModal] = useState(false);
 	const [showNavItem, setShowNavItem] = useState(false);
+	const [isSideBarShow, setIsSideBarShow] = useState(false)
 	const [colmun, setColumn] = useState(2);
 
 	const authInfo = {
@@ -21,6 +22,8 @@ const AuthPorvider = ({ children }) => {
 		setColumn,
 		showNavItem,
 		setShowNavItem,
+		isSideBarShow,
+		setIsSideBarShow,
 	};
 	return (
 		<AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

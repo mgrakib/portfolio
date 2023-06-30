@@ -26,12 +26,10 @@ const HeroBannar = () => {
 					style={{
 						backgroundImage: `linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%)`,
 					}}
-					className='p-[60px] relative w-full h-full'
+					className='px-[20px] py-[60px] md:p-[60px] relative w-full h-full text-center md:text-start'
 				>
-					<h1 className='text-white-color mb-[15px]'>
-						<span>
-							Discover my Amazing <br /> Art Space!
-						</span>
+					<h1 className='text-white-color mb-[15px] '>
+						Discover my Amazing <br /> Art Space!
 					</h1>
 
 					<div className='mb-[25px] text-white-color'>
@@ -70,7 +68,7 @@ const HeroBannar = () => {
 					<img
 						src={img}
 						alt=''
-						className='absolute w-[390px] right-[0px] bottom-0'
+						className='invisible md:visible absolute w-[390px] right-[0px] bottom-0'
 					/>
 				</div>
 			</div>

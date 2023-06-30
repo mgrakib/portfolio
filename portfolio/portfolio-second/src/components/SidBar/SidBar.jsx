@@ -15,6 +15,7 @@ import "react-circular-progressbar/dist/styles.css";
 
 import profile from "../../assets/img/profile.jpg";
 import { useEffect, useState } from "react";
+import SmoothScroll from "../SmoothScroll/SmoothScroll";
 
 
 
@@ -60,6 +61,7 @@ const SidBar = () => {
 			</div>
 
 			{/* scroll bar  */}
+			<SmoothScroll />
 			<div
 				id='my-scrollbar'
 				className='w-full h-[calc(100vh-30px)] overflow-y-auto block  px-[15px] scrollbar'

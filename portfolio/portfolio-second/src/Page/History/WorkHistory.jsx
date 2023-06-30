@@ -21,11 +21,7 @@ const WorkHistory = () => {
 						<div className='w-[20px] h-[20px] rounded-full absolute top-[6px] -right-[2px] bg-[#fafafc] z-40 animate-ping opacity-75'></div>
 						<div className='w-[15px] h-[15px] rounded-full absolute top-[8px] right-0 bg-[#1e1e28] z-40 border-[3px] border-brand-color shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'></div>
 
-						<div
-							data-aos='zoom-in'
-							data-aos-offset='0'
-							data-aos-duration='1000'
-						>
+						
 							<div
 								style={{
 									backgroundImage: `linear-gradient(159deg,#2d2d3a 0%,#2b2b35 100%)`,
@@ -67,7 +63,7 @@ const WorkHistory = () => {
 									</span>
 								</button>
 							</div>
-						</div>
+						
 					</div>
 				</div>
 			</div>

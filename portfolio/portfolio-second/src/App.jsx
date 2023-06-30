@@ -1,171 +1,123 @@
-
-import { IoMenu } from "react-icons/io5";
-import { IoClose } from "react-icons/io5";
-
-import { Link, NavLink, Outlet } from "react-router-dom";
-import "./App.css";
-import SidBar from "./components/SidBar/SidBar";
-
-import bg from './assets/img/bg.jpg'
+/** @format */
 
 
-import { useContext, useState } from "react";
 
-
-import './App.css'
-import { AuthContext } from "./AuthPorvider/AuthPorvider";
-import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
-import SmoothScrollTwo from "./components/SmoothScroll/SmoothScrollTwo";
+import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
+import SidBar from "./components/SidBar/SidBar";
+import SmoothScrollTwo from "./components/SmoothScroll/SmoothScrollTwo";
 
-function App() {
-	const { isOpen, setIsOpen, routeName, setRouteName, setShowNavItem } =
-		useContext(AuthContext);
-	
+
+import { HiDotsVertical } from "react-icons/hi";
+import bg from "./assets/img/bg.jpg";
+import useAuth from "./hooks/useAuth";
+import { IoMenu } from "react-icons/io5";
+
+const App = () => {
+	const {
+		isOpen,
+		setIsOpen,
+		isSideBarShow,
+		setIsSideBarShow,
+		setShowNavItem
+	} = useAuth();
 	return (
-		<div className='p-[15px] w-[100vw] h-[100vh]  relative '>
-			<div className='max-w-[1440px] mx-auto bg-cover w-full h-full relative  overflow-hidden shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'>
-				<div className='flex  flex-nowrap relative '>
-					<div className='w-[290px]'>
-						<SmoothScroll />
+		<div className='md:p-[15px]'>
+			{/* container div */}
+			<div className='relative'>
+				<div className='flex w-full h-[calc(100vh-30px)] relative overflow-hidden'>
+					{/* sid bar div  */}
+
+					<div
+						className={`absolute   z-[999] -left-[290px] md:left-0 md:relative w-[290px] h-full duration-500 ${
+							isSideBarShow && "translate-x-[290px]"
+						}`}
+					>
+						<div className='h-[70px] flex items-center absolute w-full justify-start z-[999999] md:hidden'>
+							<button
+								onClick={() => {
+									setIsSideBarShow(!isSideBarShow);
+									setIsOpen(false);
+								}}
+								className={`ml-auto  text-gray-color text-[14px] font-[800] p-[30px] duration-500 ${
+									isSideBarShow
+										? "translate-x-0"
+										: "translate-x-[70px]"
+								}`}
+							>
+								<HiDotsVertical />
+							</button>
+						</div>
 						<SidBar />
 					</div>
-					{/* nav */}
-					<div>
-						<NavBar />
-					</div>
 
-					<SmoothScrollTwo />
-					{/* Outlet */}
-					<div>
+					{/* OutLet container div  */}
+					<div
+						className={`relative overflow-hidden w-[100vw] h-[100vh] md:h-[calc(100vh - 30px)] pt-[70px] md:pt-0 md:pr-[80px] duration-500 ${
+							isOpen && "acitve-div"
+						}`}
+					>
+						{/* mobile nav item  */}
+						<div className='flex justify-between items-center md:hidden w-full h-[70px] px-[30px] bg-[#20202a]  fixed z-[100] top-0 left-0 shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'></div>
+
+						{/* Overlay full page  */}
 						<div
-							className={` ${
-								isOpen && "active-link"
-							} relative overflow-y-scroll w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px]`}
+							onClick={() => {
+								setIsOpen(false);
+								setIsSideBarShow(false);
+								setShowNavItem(false);
+							}}
+							className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${
+								(isOpen || isSideBarShow) &&
+								"opacity-70 pointer-events-auto"
+							}`}
+						></div>
+
+						{/* fixed effect  */}
+						<div
+							style={{ backgroundImage: `url(${bg})` }}
+							className='w-[100%] h-[400px] bg-cover bg-center  absolute top-0'
 						>
-							{/* overlay  */}
 							<div
-								onClick={() => {
-									setIsOpen(false)
-									setShowNavItem(false);
-
+								style={{
+									backgroundImage: `linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%)`,
 								}}
-								className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${
-									isOpen && "opacity-70 pointer-events-auto"
-								}`}
+								className='absolute w-full h-[calc(100vh-30px)] top-0 left-0 '
 							></div>
-							{/* fixex bd  */}
-							<div
-								style={{ backgroundImage: `url(${bg})` }}
-								className='w-full h-[400px] bg-cover bg-center bg-fixed '
-							>
-								{/* overlay for fixex bg  */}
-								<div
-									style={{
-										backgroundImage: `linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%)`,
-									}}
-									className='absolute w-full h-full top-0 left-0 '
-								></div>
+						</div>
 
-								<div
-									id='main-content'
-									className='w-full h-[calc(100vh-30px)] overflow-x-auto  z-50 relative scrollbar px-[30px] py-3'
-								>
-									<div>
-										<Outlet />
-									</div>
-
-									<div className='p-[10px] gradiant-bg text-gray-color'>
-										<p>© 2023 All Rights Reserved.</p>
-									</div>
-								</div>
+						{/* main content div  */}
+						<div className='h-full w-full px-[15px] md:p-[20px]'>
+							<Outlet />
+							<div className='mb-[30px] gradiant-bg px-[30px] py-[15px] text-gray-color'>
+								© 2023 All Rights Reserved.
 							</div>
 						</div>
+					</div>
+
+					{/* navbar div  */}
+					<div className='w-[250px] h-full translate-x-0  absolute -right-[250px] md:-right-[170px]  z-[999]'>
+						<div className='h-[70px] flex items-center absolute w-full justify-start z-[999999] md:hidden bg-red-600'>
+							<button
+								onClick={() => {
+									setIsOpen(!isOpen);
+									setIsSideBarShow(false);
+								}}
+								className={` text-gray-color text-[14px] font-[800] p-[30px] duration-500  ${
+									isOpen
+										? "-translate-x-[160px]"
+										: "-translate-x-[80px]"
+								}`}
+							>
+								<IoMenu />
+							</button>
+						</div>
+						<NavBar />
 					</div>
 				</div>
 			</div>
 		</div>
 	);
-}
+};
 
 export default App;
-
-
-
-
-{/* <div className='p-[15px] w-[100vw] h-[100vh] relative overflow-hidden'>
-	<div className='max-w-[1440px] mx-auto bg-cover w-full h-full relative overflow-hidden shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'>
-		<div className='flex flex-nowrap relative '>
-			<SidBar />
-
-			
-			<div
-				className={`bg-[#20202a] w-[230px] h-[calc(100vh-30px)] z-[999] -right-[150px] absolute duration-500 ${
-					isOpen && "active-link"
-				}`}
-			>
-				<div>
-					<div
-						style={{
-							backgroundImage: `linear-gradient(159deg,rgba(37,37,50,.98) 0%,rgba(35,35,45,.98) 100%)`,
-						}}
-						className='w-full h-[70px] flex items-center'
-					>
-						
-						<span className='px-[30px] '>
-							{isOpen ? (
-								<IoClose
-									onClick={() => setIsOpen(!isOpen)}
-									className='cursor-pointer text-white text-2xl duration-500'
-								/>
-							) : (
-								<IoMenu
-									onClick={() => setIsOpen(!isOpen)}
-									className='cursor-pointer text-white text-2xl duration-500'
-								/>
-							)}
-						</span>
-					</div>
-
-					
-					<div
-						className={` w-[200px] text-[#fafafc] absolute  overflow-hidden top-[200px] text-[13px] font-[500] -left-[62px] opacity-100 leading-3 duration-500 rotate-90 ${
-							isOpen && "opacity-[0]"
-						}`}
-					>
-						Home
-					</div>
-				</div>
-			</div>
-
-			
-			<div
-				className={` ${
-					isOpen && "active-link"
-				} relative overflow-hidden w-[100vw] h-[calc(100vh-30px)] duration-500 pr-[80px] `}
-			>
-				<div
-					className={` bg-[rgba(30,30,40,.88)] z-[9] absolute left-0 w-full h-full opacity-0 duration-500 ${
-						isOpen && "opacity-70"
-					}`}
-				></div>
-
-				<div
-					style={{ backgroundImage: `url(${bg})` }}
-					className='overflow-hidden absolute w-full h-[400px] top-0 bg-center bg-cover'
-				>
-					<div
-						style={{
-							backgroundImage: `linear-gradient(180deg,rgba(30,30,40,.93) 0%,rgba(30,30,40,.96) 70%,rgba(30,30,40,.99) 80%,#1e1e28 100%)`,
-						}}
-						className='relative w-full h-full '
-					></div>
-				</div>
-				<div className='text-white'>
-					alskflsf
-					<Outlet />
-				</div>
-			</div>
-		</div>
-	</div>
-</div>; */}

@@ -1,14 +1,13 @@
 import { FaStar } from "react-icons/fa";
 
 import rupa from '../../assets/img/rupa.jpg'
+import SectionTitle from "../SectionTitle/SectionTitle";
 const Feedback = () => {
     return (
 		<div className='mb-[30px]'>
-			<h3 className='text-[17px] font-[600] pb-[30px] text-white-color'>
-				Recommendations
-			</h3>
+			<SectionTitle title={"Recommendations"} />
 
-			<div className='grid grid-cols-2 gap-5'>
+			<div className='grid md:grid-cols-2 gap-10 md:gap-5'>
 				<div className='p-[30px] gradiant-bg relative'>
 					<div>
 						<h6>RUPA</h6>
@@ -41,8 +40,8 @@ const Feedback = () => {
 					<div className='w-[50px] h-[50px]  rounded-full absolute -top-5 right-5 overflow-hidden '>
 						<img
 							src={rupa}
-                            alt=''
-                            className="w-full h-full object-cover"
+							alt=''
+							className='w-full h-full object-cover'
 						/>
 					</div>
 				</div>
@@ -78,8 +77,8 @@ const Feedback = () => {
 					<div className='w-[50px] h-[50px]  rounded-full absolute -top-5 right-5 overflow-hidden '>
 						<img
 							src={rupa}
-                            alt=''
-                            className="w-full h-full object-cover"
+							alt=''
+							className='w-full h-full object-cover'
 						/>
 					</div>
 				</div>

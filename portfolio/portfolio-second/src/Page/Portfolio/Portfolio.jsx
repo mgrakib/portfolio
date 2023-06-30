@@ -15,7 +15,7 @@ const Portfolio = () => {
 				Portfolio
 			</h3>
 
-			<div className={`grid grid-cols-${colmun} gap-8`}>
+			<div className={`grid md:grid-cols-${colmun} gap-8`}>
 				<div
 					data-aos='zoom-in'
 					data-aos-offset='0'
