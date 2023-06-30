@@ -15,18 +15,12 @@ import "react-circular-progressbar/dist/styles.css";
 
 import profile from "../../assets/img/profile.jpg";
 import { useEffect, useState } from "react";
+
+
+
 const SidBar = () => {
-     const [offsetY, setOffsetY] = useState(0);
-		const handleScroll = () => setOffsetY(window.pageYOffset);
-
-		useEffect(() => {
-			window.addEventListener("scroll", handleScroll);
-
-			return () => window.removeEventListener("scroll", handleScroll);
-		}, []);
-
-
-
+   
+	
 	return (
 		<div className='w-[290px] min-w-[290] bg-secondary-bg-color h-[calc(100vh-30px)] relative z-[999] shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'>
 			<div className='absolute z-[9999] left-0 top-0 h-[235px] bg-gradient-to-r light-gradiant w-full text-center shadow-[0_1px_4px_0_rgba(15,15,20,.1)] p-[30px]'>
@@ -66,13 +60,16 @@ const SidBar = () => {
 			</div>
 
 			{/* scroll bar  */}
-			<div className='w-full h-[calc(100vh-30px)] overflow-y-auto block  px-[15px] scrollbar'>
+			<div
+				id='my-scrollbar'
+				className='w-full h-[calc(100vh-30px)] overflow-y-auto block  px-[15px] scrollbar'
+			>
 				<div
-					style={{ transform: `translateY(-${offsetY * 0.5}px)` }}
+					
 					className='pt-[240px]  pb-[50px] w-full  text-black scroll-div'
 				>
 					<div
-						style={{ transform: `translateY(${offsetY * 0.8}px)` }}
+						
 					>
 						{/* info  */}
 						<div className='py-[15px] border-b border-gray-color'>

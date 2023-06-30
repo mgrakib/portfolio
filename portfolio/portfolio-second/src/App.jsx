@@ -14,6 +14,8 @@ import { useContext, useState } from "react";
 
 import './App.css'
 import { AuthContext } from "./AuthPorvider/AuthPorvider";
+import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
+import SmoothScrollTwo from "./components/SmoothScroll/SmoothScrollTwo";
 
 function App() {
  const { isOpen, setIsOpen } = useContext(AuthContext);
@@ -22,9 +24,9 @@ function App() {
 			<div className='max-w-[1440px] mx-auto bg-cover w-full h-full relative  overflow-hidden shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'>
 				<div className='flex  flex-nowrap relative '>
 					<div className='w-[290px]'>
+						<SmoothScroll />
 						<SidBar />
 					</div>
-
 					{/* nav */}
 					<div
 						className={`bg-[#20202a] w-[230px] h-[calc(100vh-30px)] z-[999] -right-[150px] absolute duration-500 ${
@@ -122,6 +124,7 @@ function App() {
 						</div>
 					</div>
 
+					<SmoothScrollTwo />
 					{/* Outlet */}
 					<div>
 						<div
@@ -129,6 +132,7 @@ function App() {
 								isOpen && "active-link"
 							} relative overflow-y-scroll w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px]`}
 						>
+							{/* overlay  */}
 							<div
 								className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${
 									isOpen && "opacity-70 pointer-events-auto"
@@ -147,7 +151,10 @@ function App() {
 									className='absolute w-full h-full top-0 left-0 '
 								></div>
 
-								<div className='w-full h-[calc(100vh-30px)] overflow-x-auto  z-50 relative scrollbar px-[30px] py-3'>
+								<div
+									id='main-content'
+									className='w-full h-[calc(100vh-30px)] overflow-x-auto  z-50 relative scrollbar px-[30px] py-3'
+								>
 									<Outlet />
 								</div>
 							</div>

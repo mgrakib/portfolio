@@ -7,7 +7,10 @@ import PricePlan from "../../components/PricePlan/PricePlan";
 
 const Home = () => {
     return (
-		<div className='mt-8'>
+		<div
+			className='mt-8 w-full '
+			id='my-s'
+		>
 			<HeroBannar />
 			<Experience />
 			<MyServices />

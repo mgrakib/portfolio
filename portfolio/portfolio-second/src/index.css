@@ -77,3 +77,13 @@ h6{
   font-weight: 400;
   color: white;
 }
+
+
+.scrollbar-track{
+  display: none !important;
+}
+
+.scrollbar-thumb {
+  width: 0 !important;
+}
+
