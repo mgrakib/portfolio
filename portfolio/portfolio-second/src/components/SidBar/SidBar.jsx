@@ -13,7 +13,7 @@ import {
 import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 
-import profile from "../../assets/img/profile.jpg";
+import profile from "../../assets/mg.jpg";
 import { useEffect, useState } from "react";
 import SmoothScroll from "../SmoothScroll/SmoothScroll";
 
@@ -33,7 +33,7 @@ const SidBar = () => {
 					/>
 				</div>
 				<div>
-					<h4 className='text-[#fafafc] mb-[10px]'>Artur Carter</h4>
+					<h4 className='text-[#fafafc] mb-[10px]'>Md. Golam Rakib</h4>
 				</div>
 				<div className='text-small text-gray-color'>
 					Front-end Deweloper <br /> Ui/UX Designer
