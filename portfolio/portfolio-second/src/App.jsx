@@ -66,8 +66,9 @@ function App() {
 
 						<div className='h-full  w-full flex items-start mt-3'>
 							<ul className='mb-[60px] w-full text-gray-color'>
-								<li>
+								<li onClick={() => setIsOpen(false)}>
 									<NavLink
+										to={"/"}
 										className={`${
 											isOpen && "active-nav-link"
 										} nav-items delay-[0.05s]`}
@@ -75,7 +76,7 @@ function App() {
 										Home
 									</NavLink>
 								</li>
-								<li>
+								<li onClick={() => setIsOpen(false)}>
 									<NavLink
 										className={`${
 											isOpen && "active-nav-link"
@@ -84,16 +85,17 @@ function App() {
 										Home
 									</NavLink>
 								</li>
-								<li>
+								<li onClick={() => setIsOpen(false)}>
 									<NavLink
+										to={"/history"}
 										className={`${
 											isOpen && "active-nav-link"
 										} nav-items delay-[0.15s]`}
 									>
-										Home
+										History
 									</NavLink>
 								</li>
-								<li>
+								<li onClick={() => setIsOpen(false)}>
 									<NavLink
 										className={`${
 											isOpen && "active-nav-link"
@@ -102,7 +104,7 @@ function App() {
 										Home
 									</NavLink>
 								</li>
-								<li>
+								<li onClick={() => setIsOpen(false)}>
 									<NavLink
 										className={`${
 											isOpen && "active-nav-link"
@@ -111,7 +113,7 @@ function App() {
 										Home
 									</NavLink>
 								</li>
-								<li>
+								<li onClick={() => setIsOpen(false)}>
 									<NavLink
 										className={`${
 											isOpen && "active-nav-link"
@@ -134,6 +136,7 @@ function App() {
 						>
 							{/* overlay  */}
 							<div
+								onClick={() => setIsOpen(false)}
 								className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${
 									isOpen && "opacity-70 pointer-events-auto"
 								}`}
@@ -155,7 +158,13 @@ function App() {
 									id='main-content'
 									className='w-full h-[calc(100vh-30px)] overflow-x-auto  z-50 relative scrollbar px-[30px] py-3'
 								>
-									<Outlet />
+									<div>
+										<Outlet />
+									</div>
+
+									<div className='p-[10px] gradiant-bg text-gray-color'>
+										<p>© 2023 All Rights Reserved.</p>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -72,6 +72,11 @@ h4{
   font-size: 22px;
   font-size: 800;
 }
+h5{
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+}
 h6{
   font-size: 13px;
   font-weight: 400;

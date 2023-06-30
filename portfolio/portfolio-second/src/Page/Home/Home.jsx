@@ -9,7 +9,7 @@ const Home = () => {
     return (
 		<div
 			className='mt-8 w-full '
-			id='my-s'
+			
 		>
 			<HeroBannar />
 			<Experience />
@@ -17,9 +17,7 @@ const Home = () => {
 			<PricePlan />
 			<Feedback />
 
-			<div className='p-[10px] gradiant-bg text-gray-color'>
-				<p>© 2023 All Rights Reserved.</p>
-			</div>
+		
 		</div>
 	);
 };

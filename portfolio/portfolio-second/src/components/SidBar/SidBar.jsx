@@ -64,13 +64,8 @@ const SidBar = () => {
 				id='my-scrollbar'
 				className='w-full h-[calc(100vh-30px)] overflow-y-auto block  px-[15px] scrollbar'
 			>
-				<div
-					
-					className='pt-[240px]  pb-[50px] w-full  text-black scroll-div'
-				>
-					<div
-						
-					>
+				<div className='pt-[240px]  pb-[50px] w-full  text-black scroll-div'>
+					<div>
 						{/* info  */}
 						<div className='py-[15px] border-b border-gray-color'>
 							<ul>

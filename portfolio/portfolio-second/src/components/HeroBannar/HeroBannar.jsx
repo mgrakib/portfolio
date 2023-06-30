@@ -1,9 +1,13 @@
-import './HeroBannar.css'
+/** @format */
+
+import "./HeroBannar.css";
 import bg from "../../assets/img/bg.jpg";
 import img from "../../assets/img/face-2.png";
 
+import { useTypewriter, Cursor, Typewriter } from "react-simple-typewriter";
+
 const HeroBannar = () => {
-    return (
+	return (
 		<div
 			style={{ backgroundImage: `url(${bg})` }}
 			className=' bg-cover bg-center bg-no-repeat mb-[30px]'
@@ -23,7 +27,22 @@ const HeroBannar = () => {
 				<div className='mb-[25px] text-white-color'>
 					{"<"}
 					<i className='text-brand-color'>code</i>
-					{">"} I build, automation tools. {"</"}
+					{">"} I build,{" "}
+					<span>
+						<Typewriter
+							words={[
+								"design mockups.",
+								"automation tools.",
+								"web interfaces.",
+								"ios and android applications.",
+							]}
+							// typeSpeed={40}
+							cursor
+							typeSpeed={100}
+							deleteSpeed={20}
+						/>
+					</span>{" "}
+					{"</"}
 					<i className='text-brand-color'>code</i>
 					{">"}
 				</div>
