@@ -18,7 +18,9 @@ import SmoothScroll from "./components/SmoothScroll/SmoothScroll";
 import SmoothScrollTwo from "./components/SmoothScroll/SmoothScrollTwo";
 
 function App() {
- const { isOpen, setIsOpen } = useContext(AuthContext);
+	const { isOpen, setIsOpen, routeName, setRouteName } =
+		useContext(AuthContext);
+	
 	return (
 		<div className='p-[15px] w-[100vw] h-[100vh]  relative '>
 			<div className='max-w-[1440px] mx-auto bg-cover w-full h-full relative  overflow-hidden shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'>
@@ -60,7 +62,7 @@ function App() {
 									isOpen && "opacity-[0]"
 								}`}
 							>
-								Home
+								{routeName}
 							</div>
 						</div>
 
@@ -68,6 +70,7 @@ function App() {
 							<ul className='mb-[60px] w-full text-gray-color'>
 								<li onClick={() => setIsOpen(false)}>
 									<NavLink
+										onClick={() => setRouteName("Home")}
 										to={"/"}
 										className={`${
 											isOpen && "active-nav-link"
@@ -87,6 +90,7 @@ function App() {
 								</li>
 								<li onClick={() => setIsOpen(false)}>
 									<NavLink
+										onClick={() => setRouteName("History")}
 										to={"/history"}
 										className={`${
 											isOpen && "active-nav-link"

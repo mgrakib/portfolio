@@ -40,6 +40,7 @@ const HeroBannar = () => {
 							cursor
 							typeSpeed={100}
 							deleteSpeed={20}
+							loop
 						/>
 					</span>{" "}
 					{"</"}
