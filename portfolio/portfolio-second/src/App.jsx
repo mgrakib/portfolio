@@ -62,13 +62,12 @@ function App() {
 							</div>
 						</div>
 					</div>
-					<div>
+
+					<div className='relative  w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px] bg-red-500'>
 						<div
-							className={` ${
-								isOpen && "active-link"
-							} relative overflow-y-scroll w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px]`}
+							className={`relative overflow-y-scroll w-[calc(100vw-290px)] h-[calc(100vh-30px)] duration-500 pr-[80px] bg-red-500`}
 						>
-							<div className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 ${isOpen && 'opacity-70'}`}></div>
+							<div className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${isOpen && 'opacity-70 pointer-events-auto'}`}></div>
 							{/* fixex bd  */}
 							<div
 								style={{ backgroundImage: `url(${bg})` }}
