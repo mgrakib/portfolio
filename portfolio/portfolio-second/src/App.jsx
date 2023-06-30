@@ -19,7 +19,7 @@ import SmoothScrollTwo from "./components/SmoothScroll/SmoothScrollTwo";
 import NavBar from "./components/NavBar/NavBar";
 
 function App() {
-	const { isOpen, setIsOpen, routeName, setRouteName } =
+	const { isOpen, setIsOpen, routeName, setRouteName, setShowNavItem } =
 		useContext(AuthContext);
 	
 	return (
@@ -45,7 +45,11 @@ function App() {
 						>
 							{/* overlay  */}
 							<div
-								onClick={() => setIsOpen(false)}
+								onClick={() => {
+									setIsOpen(false)
+									setShowNavItem(false);
+
+								}}
 								className={`absolute z-[99] bg-[rgba(30,30,40,.88)] w-full h-full opacity-0 duration-500 pointer-events-none ${
 									isOpen && "opacity-70 pointer-events-auto"
 								}`}

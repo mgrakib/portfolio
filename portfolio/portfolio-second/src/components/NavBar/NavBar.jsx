@@ -1,11 +1,24 @@
-import React, { useContext } from 'react';
+import {  useState } from 'react';
 import { IoClose, IoMenu } from 'react-icons/io5';
-import { AuthContext } from '../../AuthPorvider/AuthPorvider';
+
 import { NavLink } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 
 const NavBar = () => {
-    const { isOpen, setIsOpen, routeName, setRouteName } =
-		useContext(AuthContext);
+    const {
+		isOpen,
+		setIsOpen,
+		routeName,
+		setRouteName,
+		setColumn,
+		showNavItem,
+		setShowNavItem,
+	} = useAuth();
+	
+	// shwo inside nav link 
+
+
+
     return (
 		<>
 			<div
@@ -69,6 +82,60 @@ const NavBar = () => {
 								History
 							</NavLink>
 						</li>
+						<li onClick={() => setShowNavItem(!showNavItem)}>
+							<NavLink
+								
+								className={`${
+									isOpen && "active-nav-link"
+								} nav-items delay-[0.15s]`}
+							>
+								Portfolio
+							</NavLink>
+
+							{/* inside nav  */}
+							<ul
+								className={`  shadow-[inset_0_3px_8px_0_rgba(15,15,20,.2)] overflow-hidden bg-[#20202a] duration-1000 ${
+									showNavItem
+										? "max-h-[500px]"
+										: "max-h-[0px]"
+								}`}
+							>
+								<li onClick={() => setIsOpen(false)}>
+									<NavLink
+										onClick={() => {
+											setRouteName(
+												"Portfolio (2 column)"
+											);
+											setColumn(2);
+										}}
+										to={"/portfolio"}
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.15s] `}
+									>
+										Portfolio (2 column)
+									</NavLink>
+								</li>
+
+								<li onClick={() => setIsOpen(false)}>
+									<NavLink
+										onClick={() => {
+											setRouteName(
+												"Portfolio (3 column)"
+											);
+											setColumn(3);
+										}}
+										to={"/portfolio"}
+										className={`${
+											isOpen && "active-nav-link"
+										} nav-items delay-[0.15s] `}
+									>
+										Portfolio (3 column)
+									</NavLink>
+								</li>
+							</ul>
+						</li>
+
 						<li onClick={() => setIsOpen(false)}>
 							<NavLink
 								onClick={() => setRouteName("Contact")}
@@ -80,7 +147,7 @@ const NavBar = () => {
 								Contact
 							</NavLink>
 						</li>
-						
+
 						<li onClick={() => setIsOpen(false)}>
 							<NavLink
 								className={`${
