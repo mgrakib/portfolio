@@ -10,6 +10,7 @@ const AuthPorvider = ({ children }) => {
 	const [showNavItem, setShowNavItem] = useState(false);
 	const [isSideBarShow, setIsSideBarShow] = useState(false)
 	const [colmun, setColumn] = useState(2);
+	const [projectDisplay, setProjectDisplay] = useState('')
 
 	const authInfo = {
 		isOpen,
@@ -24,6 +25,8 @@ const AuthPorvider = ({ children }) => {
 		setShowNavItem,
 		isSideBarShow,
 		setIsSideBarShow,
+		projectDisplay,
+		setProjectDisplay,
 	};
 	return (
 		<AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>

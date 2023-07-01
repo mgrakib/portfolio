@@ -43,6 +43,7 @@ import Home from "../Page/Home/Home";
 import History from "../Page/History/History";
 import Contact from "../Page/Contact/Contact";
 import Portfolio from "../Page/Portfolio/Portfolio";
+import ProjectDetails from "../Page/ProjectDetails/ProjectDetails";
 
 const router = createBrowserRouter([
 	{
@@ -64,6 +65,11 @@ const router = createBrowserRouter([
 			{
 				path: "/portfolio",
 				element: <Portfolio />,
+			},
+			{
+				path: "/project-details/:id",
+				element: <ProjectDetails />,
+				
 			},
 		],
 	},

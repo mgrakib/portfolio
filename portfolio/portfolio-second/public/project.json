@@ -1,0 +1,60 @@
+[
+    {
+		"id": "mgpro_01",
+		"name": "Support System",
+		"description": "Perferendis modi tempora, minus facere! Animi ipsam explicabo beatae soluta qui repellat minus perspiciatis placeat doloribus praesentium laborum debitis error sed ex nisi, ipsum ad obcaecati assumenda ut recusandae. Vero, voluptate, magni unde accusantium vel ducimus expedita!",
+		"email": "Sincere@april.biz",
+		"projectInfo": {
+			"orderDate": "24.12.2019",
+			"finalDate": "12.03.2020",
+			"status": "Completed"
+		},
+		"projectImages":
+            {
+				"displayImage": "https://i.ibb.co/J5SLc65/image.png",
+				"photoShowCase":["https://i.ibb.co/gDmhyvr/support-Dashboard-ful.png","https://i.ibb.co/3Rqy1P9/support-new-ticket.png", 
+			 "https://i.ibb.co/7tysd4c/support-ticket-response.png"]
+			}
+        ,
+		"clientReviews":[
+            {
+                "clientName":"Paul Trueman",
+                "clientDesignation":"Template author",
+                "review":"Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+                "rating":5,
+                "clientImg":""
+            },
+            {
+                "clientName":"Paul Trueman",
+                "clientDesignation":"Template author",
+                "review":"Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+                "rating":5,
+                "clientImg":""
+            }
+        ]
+	},
+     {
+			"id": "mgpro_02",
+			"name": "Second Project",
+			"description": "Perferendis modi tempora, minus facere! Animi ipsam explicabo beatae soluta qui repellat minus perspiciatis placeat doloribus praesentium laborum debitis error sed ex nisi, ipsum ad obcaecati assumenda ut recusandae. Vero, voluptate, magni unde accusantium vel ducimus expedita!",
+			"email": "Sincere@april.biz",
+			"projectInfo": {
+				"orderDate": "24.12.2019",
+				"finalDate": "12.03.2020",
+				"status": "Completed"
+			},
+			"displayImg": "1-770-736-8031 x56442",
+			"showImg": "",
+			"clientReviews": [
+				{
+					"clientName": "Paul Trueman",
+					"clientDesignation": "Template author",
+					"review": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+					"rating": 3,
+					"clientImg": ""
+				}
+			]
+		}
+    
+   
+]
