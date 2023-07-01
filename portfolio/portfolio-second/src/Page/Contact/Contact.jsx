@@ -108,78 +108,76 @@ const Contact = () => {
 					Get in touch
 				</h3>
 
-				
-					<div className='p-[30px] gradiant-bg'>
-						<div
-							style={{
-								backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
-							}}
-							className='input-container'
-						>
-							<div className='input-label'>
-								<FaUser />
-							</div>
-							<div>
-								<input
-									type='text'
-									name=''
-									id=''
-									placeholder='Name'
-									className='input-field'
-								/>
-							</div>
+				<div className='p-[30px] gradiant-bg'>
+					<div
+						style={{
+							backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
+						}}
+						className='input-container'
+					>
+						<div className='input-label'>
+							<FaUser />
 						</div>
-
-						<div
-							style={{
-								backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
-							}}
-							className='input-container'
-						>
-							<div className='input-label'>
-								<FaUser />
-							</div>
-							<div>
-								<input
-									type='text'
-									name=''
-									id=''
-									placeholder='Email'
-									className='input-field'
-								/>
-							</div>
-						</div>
-						<div
-							style={{
-								backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
-							}}
-							className='textarea-container  '
-						>
-							<div className='w-[50px] h-full bg-primary-bg-color absolute top-0 left-0'>
-								<div className='input-label'>
-									<FaUser />
-								</div>
-							</div>
-							<div>
-								<textarea
-									name=''
-									id=''
-									placeholder='Message'
-									className='input-field'
-								></textarea>
-							</div>
-						</div>
-
 						<div>
-							<a
-								href=''
-								className='text-[12px] font-[600] h-[45px] bg-brand-color px-[35px] inline-flex  items-center uppercase'
-							>
-								Send Message
-							</a>
+							<input
+								type='text'
+								name=''
+								id=''
+								placeholder='Name'
+								className='input-field'
+							/>
 						</div>
 					</div>
-				
+
+					<div
+						style={{
+							backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
+						}}
+						className='input-container'
+					>
+						<div className='input-label'>
+							<FaUser />
+						</div>
+						<div>
+							<input
+								type='text'
+								name=''
+								id=''
+								placeholder='Email'
+								className='input-field'
+							/>
+						</div>
+					</div>
+					<div
+						style={{
+							backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
+						}}
+						className='textarea-container'
+					>
+						<div className='w-[50px] h-full bg-primary-bg-color absolute top-0 left-0'>
+							<div className='input-label'>
+								<FaUser />
+							</div>
+						</div>
+						<div className='w-full h-full '>
+							<textarea
+								name=''
+								id=''
+								placeholder='Message'
+								className='textarea-field '
+							></textarea>
+						</div>
+					</div>
+
+					<div>
+						<a
+							href=''
+							className='text-[12px] font-[600] h-[45px] bg-brand-color px-[35px] inline-flex  items-center uppercase'
+						>
+							Send Message
+						</a>
+					</div>
+				</div>
 			</div>
 		</>
 	);

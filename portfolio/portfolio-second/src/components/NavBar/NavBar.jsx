@@ -3,6 +3,7 @@ import { IoClose, IoMenu } from 'react-icons/io5';
 
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../hooks/useAuth';
+import { useState } from 'react';
 
 const NavBar = () => {
     const {
@@ -15,7 +16,9 @@ const NavBar = () => {
 		setShowNavItem,
 	} = useAuth();
 	
-	// shwo inside nav link 
+	// shwo inside nav link
+
+	// const [activeLink, setActiveLink] = useState('Home')
 
 
 
@@ -61,31 +64,41 @@ const NavBar = () => {
 					<div>
 						<div className='h-full  w-full flex items-start mt-3'>
 							<ul className='mb-[60px] w-full text-gray-color'>
-								<li onClick={() => {
-									setIsOpen(false)
-									setShowNavItem(false);
-								}}>
+								<li
+									onClick={() => {
+										setIsOpen(false);
+										setShowNavItem(false);
+									}}
+								>
 									<NavLink
 										onClick={() => setRouteName("Home")}
 										to={"/"}
 										className={`${
 											isOpen && "active-nav-link"
-										} nav-items `}
+										} nav-items ${
+											routeName === "Home" &&
+											"text-white-color"
+										}`}
 									>
 										Home
 									</NavLink>
 								</li>
 
-								<li onClick={() => {
-									setIsOpen(false);
-									setShowNavItem(false);
-								}}>
+								<li
+									onClick={() => {
+										setIsOpen(false);
+										setShowNavItem(false);
+									}}
+								>
 									<NavLink
 										onClick={() => setRouteName("History")}
 										to={"history"}
 										className={`${
 											isOpen && "active-nav-link"
-										} nav-items`}
+										} nav-items ${
+											routeName === "History" &&
+											"text-white-color"
+										}`}
 									>
 										History
 									</NavLink>
@@ -96,7 +109,13 @@ const NavBar = () => {
 									<div
 										className={`${
 											isOpen && "active-nav-link"
-										} nav-items cursor-pointer`}
+										} nav-items cursor-pointer ${
+											(routeName ===
+												"Portfolio (2 column)" ||
+												routeName ===
+													"Portfolio (3 column)") &&
+											"text-white-color"
+										}`}
 									>
 										Portfolio
 									</div>
@@ -145,25 +164,32 @@ const NavBar = () => {
 									</ul>
 								</li>
 
-								<li onClick={() => {
-									setIsOpen(false);
-									setShowNavItem(false);
-								}}>
+								<li
+									onClick={() => {
+										setIsOpen(false);
+										setShowNavItem(false);
+									}}
+								>
 									<NavLink
 										onClick={() => setRouteName("Contact")}
 										to={"/contact"}
 										className={`${
 											isOpen && "active-nav-link"
-										} nav-items `}
+										} nav-items ${
+											routeName === "Contact" &&
+											"text-white-color"
+										}`}
 									>
 										Contact
 									</NavLink>
 								</li>
 
-								<li onClick={() => {
-									setIsOpen(false);
-									setShowNavItem(false);
-								}}>
+								<li
+									onClick={() => {
+										setIsOpen(false);
+										setShowNavItem(false);
+									}}
+								>
 									<NavLink
 										className={`${
 											isOpen && "active-nav-link"
