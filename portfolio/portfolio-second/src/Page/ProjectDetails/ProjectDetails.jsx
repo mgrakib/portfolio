@@ -12,6 +12,7 @@ import bg from "../../assets/img/bg.jpg";
 
 import rupa from "../../assets/img/rupa.jpg";
 import Rating from "react-rating";
+import { Helmet } from "react-helmet-async";
 
 const ProjectDetails = () => {
 	const { projectDisplay, setProjectDisplay } = useAuth();
@@ -34,6 +35,9 @@ const ProjectDetails = () => {
 
 	return (
 		<>
+			<Helmet>
+				<title>Project Details - MG Rakib</title>
+			</Helmet>
 			<SmoothScrollTwo />
 			<div
 				id='main-content'

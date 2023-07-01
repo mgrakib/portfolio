@@ -11,6 +11,7 @@ import SmoothScrollTwo from "../../components/SmoothScroll/SmoothScrollTwo";
 import { useEffect, useState } from "react";
 import { IoEllipseSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 // ..
 AOS.init();
 const Portfolio = () => {
@@ -25,6 +26,9 @@ const Portfolio = () => {
 
 	return (
 		<>
+			<Helmet>
+				<title>Portfolio - MG Rakib</title>
+			</Helmet>
 			<SmoothScrollTwo />
 			<div
 				id='main-content'
@@ -43,10 +47,9 @@ const Portfolio = () => {
 								words.slice(0, 10).join(" ") + "...";
 						} else {
 							truncatedDescription = project.description;
-							
 						}
 						// console.log(project?.projectImages?.displayImage);
-					
+
 						return (
 							<div
 								key={project.id}
@@ -80,7 +83,9 @@ const Portfolio = () => {
 									)}
 
 									<Link
-										onClick={() => setProjectDisplay(project.id)}
+										onClick={() =>
+											setProjectDisplay(project.id)
+										}
 										to={`/project-details/${project.id}`}
 									>
 										<button className='text-brand-color font-[600] flex items-center group'>

@@ -25,6 +25,7 @@
 // export default Home;
 
 
+import { Helmet } from 'react-helmet-async';
 import Experience from '../../components/Experience/Experience';
 import Feedback from '../../components/Feedback/Feedback';
 import HeroBannar from '../../components/HeroBannar/HeroBannar';
@@ -36,6 +37,9 @@ import './Home.css'
 const Home = () => {
     return (
 		<>
+			<Helmet>
+				<title>Home - MG Rakib</title>
+			</Helmet>
 			<SmoothScrollTwo />
 			<div
 				id='main-content'

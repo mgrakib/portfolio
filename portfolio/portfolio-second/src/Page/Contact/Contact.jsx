@@ -6,11 +6,15 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 
 import SmoothScrollTwo from "../../components/SmoothScroll/SmoothScrollTwo";
+import { Helmet } from "react-helmet-async";
 // ..
 AOS.init();
 const Contact = () => {
 	return (
 		<>
+			<Helmet>
+				<title>Contact - MG Rakib</title>
+			</Helmet>
 			<SmoothScrollTwo />
 			<div
 				id='main-content'

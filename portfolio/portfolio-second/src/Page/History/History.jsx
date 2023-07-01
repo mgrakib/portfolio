@@ -6,12 +6,16 @@ import WorkHistory from './WorkHistory';
 
 import RecommendationModal from '../../components/DialogModal/RecommendationModal';
 import SmoothScrollTwo from '../../components/SmoothScroll/SmoothScrollTwo';
+import { Helmet } from 'react-helmet-async';
 
 const History = () => {
 
 	
 	return (
 		<>
+			<Helmet>
+				<title>History - MG Rakib</title>
+			</Helmet>
 			<SmoothScrollTwo />
 			<div
 				id='main-content'
