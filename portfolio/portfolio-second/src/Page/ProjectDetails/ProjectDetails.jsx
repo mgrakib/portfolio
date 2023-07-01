@@ -8,7 +8,7 @@ import { useEffect, useState } from "react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
 
-
+import bg from "../../assets/img/bg.jpg";
 
 import rupa from "../../assets/img/rupa.jpg";
 import Rating from "react-rating";
@@ -102,58 +102,83 @@ const ProjectDetails = () => {
 							: "md:grid-cols-1"
 					}`}
 				>
-                    {
-                        project?.clientReviews?.map((review, i) => {
-                            return (
-								<div
-									key={i}
-									className='p-[30px] gradiant-bg relative'
-								>
+					{project?.clientReviews?.map((review, i) => {
+						return (
+							<div
+								key={i}
+								className='p-[30px] gradiant-bg relative'
+							>
+								<div>
+									<h6>{review.clientName}</h6>
+									<p className='mt-[5px] mb-[15px] text-gray-color'>
+										<i>{review.clientDesignation}</i>
+									</p>
+
 									<div>
-										<h6>{review.clientName}</h6>
-										<p className='mt-[5px] mb-[15px] text-gray-color'>
-											<i>{review.clientDesignation}</i>
+										<p className='text-gray-color mb-[16px]'>
+											{review.review}
 										</p>
+									</div>
 
-										<div>
-											<p className='text-gray-color mb-[16px]'>
-												{review.review}
-											</p>
-										</div>
-
-										<div className='bg-primary-bg-color text-brand-color  py-[5px] px-[15px] rounded-full inline-block'>
-											<div className=' flex items-center justify-start gap-1 text-[12px] '>
-												{/* <FaStar />
+									<div className='bg-primary-bg-color text-brand-color  py-[5px] px-[15px] rounded-full inline-block'>
+										<div className=' flex items-center justify-start gap-1 text-[12px] '>
+											{/* <FaStar />
 												
 												<FaStar />
 												<FaStar />
 												<FaStar /> */}
-												<Rating
-													readonly
-													placeholderRating={
-														review.rating
-													}
-													emptySymbol={<FaRegStar />}
-													placeholderSymbol={
-														<FaStar />
-													}
-													fullSymbol={<FaStar />}
-												/>
-											</div>
+											<Rating
+												readonly
+												placeholderRating={
+													review.rating
+												}
+												emptySymbol={<FaRegStar />}
+												placeholderSymbol={<FaStar />}
+												fullSymbol={<FaStar />}
+											/>
 										</div>
 									</div>
-
-									<div className='w-[50px] h-[50px]  rounded-full absolute -top-5 right-5 overflow-hidden '>
-										<img
-											src={rupa}
-											alt=''
-											className='w-full h-full object-cover'
-										/>
-									</div>
 								</div>
-							);
-                        })
-                    }
+
+								<div className='w-[50px] h-[50px]  rounded-full absolute -top-5 right-5 overflow-hidden '>
+									<img
+										src={rupa}
+										alt=''
+										className='w-full h-full object-cover'
+									/>
+								</div>
+							</div>
+						);
+					})}
+				</div>
+
+				<div
+					style={{ backgroundImage: `url(${bg})` }}
+					className=' bg-cover bg-center bg-no-repeat mb-[30px]'
+				>
+					<div
+						style={{
+							backgroundImage: `linear-gradient(90deg, rgba(45, 45, 58, 0.9) 15%, rgba(45, 45, 58, 0.7) 50%, rgba(43, 43, 53, 0.7) 100%)`,
+						}}
+						className='px-[20px] py-[60px] md:p-[60px] relative w-full h-full text-center '
+					>
+						<h1 className='text-white-color mb-[15px] '>
+							Ready to order your project?
+						</h1>
+
+						<div className='mb-[16px] font-[400]  text-white-color font-secondary-font tracking-[.25px]'>
+							Let's work together!
+						</div>
+
+						<div>
+							<a
+								href=''
+								className='text-[12px] font-[600] h-[45px] bg-brand-color px-[35px] inline-flex  items-center uppercase'
+							>
+								CONTACT ME
+							</a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>
