@@ -5,13 +5,13 @@
 import { Outlet } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import SidBar from "./components/SidBar/SidBar";
-import SmoothScrollTwo from "./components/SmoothScroll/SmoothScrollTwo";
 
 
 import { HiDotsVertical } from "react-icons/hi";
 import bg from "./assets/img/bg.jpg";
 import useAuth from "./hooks/useAuth";
 import { IoMenu } from "react-icons/io5";
+
 
 const App = () => {
 	const {
@@ -116,6 +116,7 @@ const App = () => {
 					</div>
 				</div>
 			</div>
+			
 		</div>
 	);
 };

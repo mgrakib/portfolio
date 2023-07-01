@@ -55,7 +55,7 @@ const ProjectDetails = () => {
 					}`}
 				>
 					{project?.projectImages?.photoShowCase.map((img, i) => {
-						console.log(img);
+						
 						return (
 							<div
 								key={i}
