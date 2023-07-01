@@ -33,7 +33,9 @@ const SidBar = () => {
 					/>
 				</div>
 				<div>
-					<h4 className='text-[#fafafc] mb-[10px]'>Md. Golam Rakib</h4>
+					<h4 className='text-[#fafafc] mb-[10px]'>
+						Md. Golam Rakib
+					</h4>
 				</div>
 				<div className='text-small text-gray-color'>
 					Front-end Deweloper <br /> Ui/UX Designer
@@ -43,19 +45,31 @@ const SidBar = () => {
 			{/* socil link  */}
 
 			<div className='absolute z-[999] left-0 bottom-0 h-[50px] bg-gradient-to-r light-gradiant w-full shadow-[0px_1px_4px_0px_rgba(15, 15, 20, 0.1)] px-[35px] flex items-center justify-center gap-3 text-[13px] text-gray-color'>
-				<a href=''>
+				<a
+					href='https://www.linkedin.com/in/mgrakib/'
+					target='blank'
+				>
 					<FaLinkedin />
 				</a>
-				<a href=''>
+				<a href='https://dribbble.com/mgrakib' target="blank">
 					<FaDribbble />
 				</a>
-				<a href=''>
+				<a
+					href='https://github.com/mgrakib'
+					target='blank'
+				>
 					<FaGithub />
 				</a>
-				<a href=''>
+				<a
+					href='https://twitter.com/mgrakibbd'
+					target='blank'
+				>
 					<FaTwitter />
 				</a>
-				<a href=''>
+				<a
+					href='https://www.facebook.com/mgrakibbd/'
+					target='blank'
+				>
 					<FaFacebook />
 				</a>
 			</div>
