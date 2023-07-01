@@ -46,8 +46,8 @@ const ProjectDetails = () => {
 				<div
 					className={`grid gap-8 mb-[30px] ${
 						project?.projectImages?.photoShowCase?.length > 1
-							? "grid-cols-2"
-							: "grid-cols-1"
+							? "md:grid-cols-2"
+							: "md:grid-cols-1"
 					}`}
 				>
 					{project?.projectImages?.photoShowCase.map((img, i) => {
@@ -64,14 +64,14 @@ const ProjectDetails = () => {
 
 				<SectionTitle title={"Project details"} />
 
-				<div className='grid grid-cols-3 gap-5 mb-[30px]'>
-					<div className='col-span-2 gradiant-bg p-[30px]'>
+				<div className='grid md:grid-cols-3 gap-5 mb-[30px]'>
+					<div className='md:col-span-2 gradiant-bg p-[30px]'>
 						<h5 className='mb-[15px]'>Description</h5>
 						<p className='text-[12px] leading-[16px] mb-[15px] text-gray-color'>
 							{project?.description}
 						</p>
 					</div>
-					<div className='col-span-1 gradiant-bg p-[30px]'>
+					<div className='md:col-span-1 gradiant-bg p-[30px]'>
 						<div className='flex items-center justify-between mb-[5px]'>
 							<h5>Order Date:</h5>
 							<span className='text-gray-color'>
