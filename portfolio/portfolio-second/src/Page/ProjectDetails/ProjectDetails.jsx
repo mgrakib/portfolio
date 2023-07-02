@@ -3,7 +3,7 @@
 import SmoothScrollTwo from "../../components/SmoothScroll/SmoothScrollTwo";
 import "./ProjectDetails.css";
 import useAuth from "../../hooks/useAuth";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import SectionTitle from "../../components/SectionTitle/SectionTitle";
 import { FaRegStar, FaStar, FaStarHalfAlt } from "react-icons/fa";
@@ -13,6 +13,7 @@ import bg from "../../assets/img/bg.jpg";
 import rupa from "../../assets/img/rupa.jpg";
 import Rating from "react-rating";
 import { Helmet } from "react-helmet-async";
+import Tilt from "react-parallax-tilt";
 
 const ProjectDetails = () => {
 	const { projectDisplay, setProjectDisplay } = useAuth();
@@ -33,6 +34,7 @@ const ProjectDetails = () => {
     
     // console.log(project?.clientReviews.length);
 
+	
 	return (
 		<>
 			<Helmet>
@@ -55,7 +57,6 @@ const ProjectDetails = () => {
 					}`}
 				>
 					{project?.projectImages?.photoShowCase.map((img, i) => {
-						
 						return (
 							<div
 								key={i}
@@ -70,29 +71,66 @@ const ProjectDetails = () => {
 
 				<div className='grid md:grid-cols-3 gap-5 mb-[30px]'>
 					<div className='md:col-span-2 gradiant-bg p-[30px]'>
-						<h5 className='mb-[15px]'>Description</h5>
-						<p className='text-[12px] leading-[16px] mb-[15px] text-gray-color'>
-							{project?.description}
-						</p>
+						<div>
+							<h5 className='mb-[15px]'>Description</h5>
+							<p className='text-[12px] leading-[16px] mb-[15px] text-gray-color'>
+								{project?.description}
+							</p>
+						</div>
+						<div className='mb-[15px]'>
+							<h5 className='mb-[10px]'>Features</h5>
+
+							<div className='flex items-center gap-2  flex-wrap'>
+								{project?.feture?.map((item, index) => (
+									<p
+										key={index}
+										className='text-gray-color py-1 px-2 text-[12px] shadow-lg'
+									>
+										{`${index + 1} . ${item}`}
+									</p>
+								))}
+							</div>
+						</div>
+						<div>
+							<h5 className='mb-[15px]'>Technology</h5>
+							{/* <p className='text-[12px] leading-[16px] mb-[15px] text-gray-color'>
+								{}
+							</p> */}
+
+							<div className='flex items-center gap-2  flex-wrap'>
+								{project?.techonology?.map((item, index) => (
+									<Tilt key={index}>
+										<p
+											
+											className='text-light-gray-color py-1 px-2 border rounded-md text-[12px] shadow-lg'
+										>
+											{item}
+										</p>
+									</Tilt>
+								))}
+							</div>
+						</div>
 					</div>
-					<div className='md:col-span-1 gradiant-bg p-[30px]'>
-						<div className='flex items-center justify-between mb-[5px]'>
-							<h5>Order Date:</h5>
-							<span className='text-gray-color'>
-								{project?.projectInfo?.orderDate}
-							</span>
-						</div>
-						<div className='flex items-center justify-between mb-[5px]'>
-							<h5>Final Date:</h5>
-							<span className='text-gray-color'>
-								{project?.projectInfo?.finalDate}
-							</span>
-						</div>
-						<div className='flex items-center justify-between mb-[5px]'>
-							<h5>Status:</h5>
-							<span className='text-gray-color'>
-								{project?.projectInfo?.status}
-							</span>
+					<div className='md:col-span-1 '>
+						<div className='gradiant-bg p-[30px]'>
+							<div className='flex items-center justify-between mb-[5px]'>
+								<h5>Order Date:</h5>
+								<span className='text-gray-color'>
+									{project?.projectInfo?.orderDate}
+								</span>
+							</div>
+							<div className='flex items-center justify-between mb-[5px]'>
+								<h5>Final Date:</h5>
+								<span className='text-gray-color'>
+									{project?.projectInfo?.finalDate}
+								</span>
+							</div>
+							<div className='flex items-center justify-between mb-[5px]'>
+								<h5>Status:</h5>
+								<span className='text-gray-color'>
+									{project?.projectInfo?.status}
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -175,12 +213,12 @@ const ProjectDetails = () => {
 						</div>
 
 						<div>
-							<a
-								href=''
+							<Link
+								to={"/contact"}
 								className='text-[12px] font-[600] h-[45px] bg-brand-color px-[35px] inline-flex  items-center uppercase'
 							>
 								CONTACT ME
-							</a>
+							</Link>
 						</div>
 					</div>
 				</div>
