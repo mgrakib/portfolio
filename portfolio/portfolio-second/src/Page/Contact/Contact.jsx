@@ -34,19 +34,19 @@ const Contact = () => {
 								<div className='flex items-center justify-between mb-[5px]'>
 									<h6>Country:</h6>
 									<span className='text-gray-color'>
-										Canada
+										Bangladesh
 									</span>
 								</div>
 								<div className='flex items-center justify-between mb-[5px]'>
 									<h6>City:</h6>
 									<span className='text-gray-color'>
-										Toronto
+										Dhaka
 									</span>
 								</div>
 								<div className='flex items-center justify-between '>
 									<h6>Streat:</h6>
 									<span className='text-gray-color'>
-										20 Dellbank Rd
+										Kashimpur, Gazipur
 									</span>
 								</div>
 							</div>
@@ -61,19 +61,19 @@ const Contact = () => {
 								<div className='flex items-center justify-between mb-[5px]'>
 									<h6>Email:</h6>
 									<span className='text-gray-color'>
-										carter.inbox@mail.com
+										mgrakibbd@gmail.com
 									</span>
 								</div>
 								<div className='flex items-center justify-between mb-[5px]'>
 									<h6>Telegram:</h6>
 									<span className='text-gray-color'>
-										@arter
+										@mgrakib
 									</span>
 								</div>
 								<div className='flex items-center justify-between '>
 									<h6>Discord:</h6>
 									<span className='text-gray-color'>
-										Arter
+										mgrakib
 									</span>
 								</div>
 							</div>
@@ -88,19 +88,19 @@ const Contact = () => {
 								<div className='flex items-center justify-between mb-[5px]'>
 									<h6>Support service:</h6>
 									<span className='text-gray-color'>
-										+78 (098) 333 11 22
+										+881 81111 5794
 									</span>
 								</div>
 								<div className='flex items-center justify-between mb-[5px]'>
 									<h6>Office:</h6>
 									<span className='text-gray-color'>
-										+78 (098) 326 11 22
+										+881 73144 8023
 									</span>
 								</div>
 								<div className='flex items-center justify-between '>
 									<h6>Personal:</h6>
 									<span className='text-gray-color'>
-										+78 (077) 114 26 53
+										+881 33300 0183
 									</span>
 								</div>
 							</div>

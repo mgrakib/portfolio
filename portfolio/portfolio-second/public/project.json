@@ -51,29 +51,110 @@
 			}
 		]
 	},
-     {
-			"id": "mgpro_02",
-			"name": "Second Project",
-			"description": "Perferendis modi tempora, minus facere! Animi ipsam explicabo beatae soluta qui repellat minus perspiciatis placeat doloribus praesentium laborum debitis error sed ex nisi, ipsum ad obcaecati assumenda ut recusandae. Vero, voluptate, magni unde accusantium vel ducimus expedita!",
-			"email": "Sincere@april.biz",
-			"techonology":["HTML","CSS","TAILWIND CSS","REACT","EXPRESS","MONGODB","FIREBASE","AXIOS","TANSTACK QUERY"],
-			"projectInfo": {
-				"orderDate": "24.12.2019",
-				"finalDate": "12.03.2020",
-				"status": "Completed"
-			},
-			"displayImg": "1-770-736-8031 x56442",
-			"showImg": "",
-			"clientReviews": [
-				{
-					"clientName": "Paul Trueman",
-					"clientDesignation": "Template author",
-					"review": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
-					"rating": 3,
-					"clientImg": ""
-				}
+    {
+		"id": "mgpro_01",
+		"name": "Support System",
+		"description": "Support System is a Web Application. It can be used for office purposes. Where if User will face problem and he/she can't get out from here or Need authority help or permission then User can generate Ticket then Admin will say something to this User by sending Message to solve that problem. Any User can't get in Admin Route. Because I used JWT to secure Admin Route.",
+		"feture":[
+			"Two Route. One for User another for Admin. For Authentication I used Firebase",
+			"When User face any problem for there task then they can generate a Ticket to notify Admin. And then Admin will take action according to Ticket",
+			"Users can generate Three types of Tickets based on Priority. Like High, Medium and Low. If Ticket status is High it means this is emergency case",
+			"After notifying this problem Admin can send a Message to user what he/she have to do to solve this problem. Admin will be allow to see all user Ticket. But the User just will be able to see those Ticket that are he/she created"
+		],
+		"email": "Sincere@april.biz",
+		"techonology": [
+			"HTML",
+			"CSS",
+			"TAILWIND CSS",
+			"REACT",
+			"EXPRESS",
+			"MONGODB",
+			"FIREBASE",
+			"AXIOS",
+			"TANSTACK QUERY","JWT"
+		],
+		"projectInfo": {
+			"orderDate": "24.12.2019",
+			"finalDate": "12.03.2020",
+			"status": "Completed"
+		},
+		"projectImages": {
+			"displayImage": "https://i.ibb.co/J5SLc65/image.png",
+			"photoShowCase": [
+				"https://i.ibb.co/gDmhyvr/support-Dashboard-ful.png",
+				"https://i.ibb.co/3Rqy1P9/support-new-ticket.png",
+				"https://i.ibb.co/7tysd4c/support-ticket-response.png"
 			]
-		}
-    
+		},
+		"clientReviews": [
+			{
+				"clientName": "Paul Trueman",
+				"clientDesignation": "Template author",
+				"review": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+				"rating": 5,
+				"clientImg": ""
+			},
+			{
+				"clientName": "Paul Trueman",
+				"clientDesignation": "Template author",
+				"review": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+				"rating": 5,
+				"clientImg": ""
+			}
+		]
+	},
+    {
+		"id": "mgpro_01",
+		"name": "Support System",
+		"description": "Support System is a Web Application. It can be used for office purposes. Where if User will face problem and he/she can't get out from here or Need authority help or permission then User can generate Ticket then Admin will say something to this User by sending Message to solve that problem. Any User can't get in Admin Route. Because I used JWT to secure Admin Route.",
+		"feture":[
+			"Two Route. One for User another for Admin. For Authentication I used Firebase",
+			"When User face any problem for there task then they can generate a Ticket to notify Admin. And then Admin will take action according to Ticket",
+			"Users can generate Three types of Tickets based on Priority. Like High, Medium and Low. If Ticket status is High it means this is emergency case",
+			"After notifying this problem Admin can send a Message to user what he/she have to do to solve this problem. Admin will be allow to see all user Ticket. But the User just will be able to see those Ticket that are he/she created"
+		],
+		"email": "Sincere@april.biz",
+		"techonology": [
+			"HTML",
+			"CSS",
+			"TAILWIND CSS",
+			"REACT",
+			"EXPRESS",
+			"MONGODB",
+			"FIREBASE",
+			"AXIOS",
+			"TANSTACK QUERY","JWT"
+		],
+		"projectInfo": {
+			"orderDate": "24.12.2019",
+			"finalDate": "12.03.2020",
+			"status": "Completed"
+		},
+		"projectImages": {
+			"displayImage": "https://i.ibb.co/J5SLc65/image.png",
+			"photoShowCase": [
+				"https://i.ibb.co/gDmhyvr/support-Dashboard-ful.png",
+				"https://i.ibb.co/3Rqy1P9/support-new-ticket.png",
+				"https://i.ibb.co/7tysd4c/support-ticket-response.png"
+			]
+		},
+		"clientReviews": [
+			{
+				"clientName": "Paul Trueman",
+				"clientDesignation": "Template author",
+				"review": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+				"rating": 5,
+				"clientImg": ""
+			},
+			{
+				"clientName": "Paul Trueman",
+				"clientDesignation": "Template author",
+				"review": "Working with Artur has been a pleasure. Better yet - I alerted them of a minor issue before going to sleep. The issue was fixed the next morning. I couldn't ask for better support. Thank you Artur! This is easily a 5 star freelancer.",
+				"rating": 5,
+				"clientImg": ""
+			}
+		]
+	}
+     
    
 ]
