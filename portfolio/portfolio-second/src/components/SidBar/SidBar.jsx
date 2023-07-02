@@ -20,7 +20,12 @@ import SmoothScroll from "../SmoothScroll/SmoothScroll";
 
 
 const SidBar = () => {
-   
+	const handleDownload = () => {
+		
+		window.open(
+			`https://drive.google.com/uc?id=1brHFER43Kig2JtJQIZs5po4rR5HiQnNk&export=download`
+		);
+	};
 	
 	return (
 		<div className='w-[290px] min-w-[290] bg-secondary-bg-color h-[calc(100vh-30px)] relative z-[999] shadow-[0_3px_8px_0_rgba(15,15,20,.2)]'>
@@ -31,6 +36,14 @@ const SidBar = () => {
 						alt=''
 						className=' w-full h-full rounded-full object-cover'
 					/>
+					<div className='w-[10px] h-[10px] absolute bg-light-gray-color rounded-full right-4 bottom-0'>
+						<div>
+							<span className='relative flex h-3 w-3'>
+								<span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-light-gray-color opacity-75'></span>
+								<span className='relative inline-flex rounded-full h-3 w-3 bg-brand-color'></span>
+							</span>
+						</div>
+					</div>
 				</div>
 				<div>
 					<h4 className='text-[#fafafc] mb-[10px]'>
@@ -51,7 +64,10 @@ const SidBar = () => {
 				>
 					<FaLinkedin />
 				</a>
-				<a href='https://dribbble.com/mgrakib' target="blank">
+				<a
+					href='https://dribbble.com/mgrakib'
+					target='blank'
+				>
 					<FaDribbble />
 				</a>
 				<a
@@ -253,16 +269,23 @@ const SidBar = () => {
 							</ul>
 						</div>
 
-						<div className='py-[15px] '>
-							<a
-								href='https://drive.google.com/'
-								target='blank'
-								className='text-[12px] uppercase text-gray-color font-[600] flex items-center gap-2 '
+						<div className='py-[15px] inline-block relative'>
+							<button
+								onClick={handleDownload}
+								className='text-[12px] uppercase text-gray-color font-[600] flex items-center gap-2 animate-bounce'
 							>
 								{" "}
 								Download cv{" "}
 								<FaDownload className='font-[300]' />
-							</a>
+							</button>
+							{/* <div className='w-[8px] h-[8px] absolute bg-light-gray-color rounded-full -right-2 top-3'>
+								<div>
+									<span className='relative flex h-[8px] w-[8px]'>
+										<span className='animate-ping absolute inline-flex h-full w-full rounded-full bg-light-gray-color opacity-75'></span>
+										<span className='relative inline-flex rounded-full h-[8px] w-[8px] bg-light-gray-color'></span>
+									</span>
+								</div>
+							</div> */}
 						</div>
 					</div>
 				</div>

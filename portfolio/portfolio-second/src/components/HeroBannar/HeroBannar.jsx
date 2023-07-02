@@ -12,6 +12,12 @@ import "aos/dist/aos.css"; // You can also use <link> for styles
 AOS.init();
 
 const HeroBannar = () => {
+	const handleDownload = () => {
+		window.open(
+			`https://drive.google.com/uc?id=1brHFER43Kig2JtJQIZs5po4rR5HiQnNk&export=download`
+		);
+	};
+
 	return (
 		<div
 			data-aos='zoom-in'
@@ -57,12 +63,12 @@ const HeroBannar = () => {
 					</div>
 
 					<div>
-						<a
-							href=''
+						<button
+							onClick={handleDownload}
 							className='text-[12px] font-[600] h-[45px] bg-brand-color px-[35px] inline-flex  items-center'
 						>
-							EXPLORE NOW
-						</a>
+							Download Resume
+						</button>
 					</div>
 
 					<img
