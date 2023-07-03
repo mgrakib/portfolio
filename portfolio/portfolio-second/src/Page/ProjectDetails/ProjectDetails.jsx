@@ -132,7 +132,7 @@ const ProjectDetails = () => {
 								</span>
 							</div>
 
-							<div className="flex items-center justify-between text-light-gray-color flex-wrap gap-3 mt-1">
+							<div className="flex items-center justify-between text-light-gray-color flex-wrap gap-3 mt-5">
 								{
 									project?.links?.map((linkArray, index) => {
 										return (
