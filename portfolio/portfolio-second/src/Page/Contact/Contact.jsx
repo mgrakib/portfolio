@@ -9,7 +9,41 @@ import SmoothScrollTwo from "../../components/SmoothScroll/SmoothScrollTwo";
 import { Helmet } from "react-helmet-async";
 // ..
 AOS.init();
+
+import emailjs from "@emailjs/browser";
+import { useRef, useState } from "react";
+import Swal from "sweetalert2";
 const Contact = () => {
+	const [process, setProcess]= useState(false)
+	const form = useRef();
+	const sendEmail = e => {
+		e.preventDefault();
+		setProcess(true)
+
+		emailjs
+			.sendForm(
+				"service_yksxk3s",
+				"template_pxvgole",
+				form.current,
+				"nRYBcfGTgniuIuvw3"
+			)
+			.then(
+				result => {
+					console.log(result.text);
+					form.current.reset();
+					Swal.fire({
+						icon: "success",
+						title: "Yeap...",
+						text: "Your Message has been sent. thank you for sharing your valuable message.",
+						footer: '<a href="">Why do I have this issue?</a>',
+					});
+					setProcess(false);
+				},
+				error => {
+					console.log(error.text);
+				}
+			);
+	};
 	return (
 		<>
 			<Helmet>
@@ -113,74 +147,81 @@ const Contact = () => {
 				</h3>
 
 				<div className='p-[30px] gradiant-bg'>
-					<div
-						style={{
-							backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
-						}}
-						className='input-container'
+					<form
+						ref={form}
+						onSubmit={sendEmail}
 					>
-						<div className='input-label'>
-							<FaUser />
-						</div>
-						<div>
-							<input
-								type='text'
-								name=''
-								id=''
-								placeholder='Name'
-								className='input-field'
-							/>
-						</div>
-					</div>
-
-					<div
-						style={{
-							backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
-						}}
-						className='input-container'
-					>
-						<div className='input-label'>
-							<FaUser />
-						</div>
-						<div>
-							<input
-								type='text'
-								name=''
-								id=''
-								placeholder='Email'
-								className='input-field'
-							/>
-						</div>
-					</div>
-					<div
-						style={{
-							backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
-						}}
-						className='textarea-container'
-					>
-						<div className='w-[50px] h-full bg-primary-bg-color absolute top-0 left-0'>
+						<div
+							style={{
+								backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
+							}}
+							className='input-container'
+						>
 							<div className='input-label'>
 								<FaUser />
 							</div>
+							<div>
+								<input
+									type='text'
+									name='user_name'
+									id=''
+									placeholder='Name'
+									className='input-field'
+								/>
+							</div>
 						</div>
-						<div className='w-full h-full '>
-							<textarea
-								name=''
-								id=''
-								placeholder='Message'
-								className='textarea-field '
-							></textarea>
-						</div>
-					</div>
 
-					<div>
-						<a
-							href=''
-							className='text-[12px] font-[600] h-[45px] bg-brand-color px-[35px] inline-flex  items-center uppercase'
+						<div
+							style={{
+								backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
+							}}
+							className='input-container'
 						>
-							Send Message
-						</a>
-					</div>
+							<div className='input-label'>
+								<FaUser />
+							</div>
+							<div>
+								<input
+									type='email'
+									name='user_email'
+									id=''
+									placeholder='Email'
+									className='input-field'
+								/>
+							</div>
+						</div>
+						<div
+							style={{
+								backgroundImage: `linear-gradient(159deg,#252532 0%,#23232d 100%)`,
+							}}
+							className='textarea-container'
+						>
+							<div className='w-[50px] h-full bg-primary-bg-color absolute top-0 left-0'>
+								<div className='input-label'>
+									<FaUser />
+								</div>
+							</div>
+							<div className='w-full h-full '>
+								<textarea
+									name='message'
+									id=''
+									placeholder='Message'
+									className='textarea-field '
+								></textarea>
+							</div>
+						</div>
+
+						<div>
+							<button
+								disabled={process}
+								type='submit'
+								value='Send'
+								className='text-[12px] font-[600] h-[45px] bg-brand-color px-[35px] inline-flex  items-center uppercase'
+							>
+								Let's Talk
+							</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</>
