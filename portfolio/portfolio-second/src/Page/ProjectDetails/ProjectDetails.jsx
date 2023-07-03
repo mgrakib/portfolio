@@ -32,7 +32,7 @@ const ProjectDetails = () => {
 			});
     }, [id, setProjectDisplay]);
     
-    // console.log(project?.clientReviews.length);
+    // console.log(project?.links);
 
 	
 	return (
@@ -131,7 +131,20 @@ const ProjectDetails = () => {
 									{project?.projectInfo?.status}
 								</span>
 							</div>
+
+							<div className="flex items-center justify-between text-light-gray-color flex-wrap gap-3 mt-1">
+								{
+									project?.links?.map((linkArray, index) => {
+										return (
+											<a href={ linkArray[1]} className="cursor-pointer py-1 px-2   border border-gray-color rounded mx-auto" key={index} target="blank">
+												{linkArray[0]}
+											</a>
+										);
+									})
+								}
+							</div>
 						</div>
+						
 					</div>
 				</div>
 

@@ -1,9 +1,9 @@
 [
-    {
+	{
 		"id": "mgpro_01",
 		"name": "Support System",
 		"description": "Support System is a Web Application. It can be used for office purposes. Where if User will face problem and he/she can't get out from here or Need authority help or permission then User can generate Ticket then Admin will say something to this User by sending Message to solve that problem. Any User can't get in Admin Route. Because I used JWT to secure Admin Route.",
-		"feture":[
+		"feture": [
 			"Two Route. One for User another for Admin. For Authentication I used Firebase",
 			"When User face any problem for there task then they can generate a Ticket to notify Admin. And then Admin will take action according to Ticket",
 			"Users can generate Three types of Tickets based on Priority. Like High, Medium and Low. If Ticket status is High it means this is emergency case",
@@ -19,7 +19,8 @@
 			"MONGODB",
 			"FIREBASE",
 			"AXIOS",
-			"TANSTACK QUERY","JWT"
+			"TANSTACK QUERY",
+			"JWT"
 		],
 		"projectInfo": {
 			"orderDate": "24.12.2019",
@@ -34,6 +35,17 @@
 				"https://i.ibb.co/7tysd4c/support-ticket-response.png"
 			]
 		},
+		"links": [
+			["Live Link", "https://support-system-d49af.web.app/"],
+			[
+				"GitHub Server",
+				"https://github.com/mgrakib/support-portal-server"
+			],
+			[
+				"GitHub Client",
+				"https://github.com/mgrakib/support-portal-client"
+			]
+		],
 		"clientReviews": [
 			{
 				"clientName": "Paul Trueman",
@@ -51,11 +63,11 @@
 			}
 		]
 	},
-    {
-		"id": "mgpro_01",
-		"name": "Support System",
+	{
+		"id": "mgpro_02",
+		"name": "Dancy!",
 		"description": "Support System is a Web Application. It can be used for office purposes. Where if User will face problem and he/she can't get out from here or Need authority help or permission then User can generate Ticket then Admin will say something to this User by sending Message to solve that problem. Any User can't get in Admin Route. Because I used JWT to secure Admin Route.",
-		"feture":[
+		"feture": [
 			"Two Route. One for User another for Admin. For Authentication I used Firebase",
 			"When User face any problem for there task then they can generate a Ticket to notify Admin. And then Admin will take action according to Ticket",
 			"Users can generate Three types of Tickets based on Priority. Like High, Medium and Low. If Ticket status is High it means this is emergency case",
@@ -71,7 +83,8 @@
 			"MONGODB",
 			"FIREBASE",
 			"AXIOS",
-			"TANSTACK QUERY","JWT"
+			"TANSTACK QUERY",
+			"JWT"
 		],
 		"projectInfo": {
 			"orderDate": "24.12.2019",
@@ -79,13 +92,25 @@
 			"status": "Completed"
 		},
 		"projectImages": {
-			"displayImage": "https://i.ibb.co/J5SLc65/image.png",
+			"displayImage": "https://i.ibb.co/7yJJhPV/display-dancy.png",
 			"photoShowCase": [
-				"https://i.ibb.co/gDmhyvr/support-Dashboard-ful.png",
-				"https://i.ibb.co/3Rqy1P9/support-new-ticket.png",
-				"https://i.ibb.co/7tysd4c/support-ticket-response.png"
+				"https://i.ibb.co/tCDyVbt/dancy-home-page.png",
+				"https://i.ibb.co/MMzdYXZ/classes.png",
+				"https://i.ibb.co/Bwfcthb/admin-route.png"
 			]
 		},
+
+		"links": [
+			["Live Link", "https://support-system-d49af.web.app/"],
+			[
+				"GitHub Server",
+				"https://github.com/mgrakib/support-portal-server"
+			],
+			[
+				"GitHub Client",
+				"https://github.com/mgrakib/support-portal-client"
+			]
+		],
 		"clientReviews": [
 			{
 				"clientName": "Paul Trueman",
@@ -103,11 +128,11 @@
 			}
 		]
 	},
-    {
+	{
 		"id": "mgpro_01",
 		"name": "Support System",
 		"description": "Support System is a Web Application. It can be used for office purposes. Where if User will face problem and he/she can't get out from here or Need authority help or permission then User can generate Ticket then Admin will say something to this User by sending Message to solve that problem. Any User can't get in Admin Route. Because I used JWT to secure Admin Route.",
-		"feture":[
+		"feture": [
 			"Two Route. One for User another for Admin. For Authentication I used Firebase",
 			"When User face any problem for there task then they can generate a Ticket to notify Admin. And then Admin will take action according to Ticket",
 			"Users can generate Three types of Tickets based on Priority. Like High, Medium and Low. If Ticket status is High it means this is emergency case",
@@ -123,7 +148,8 @@
 			"MONGODB",
 			"FIREBASE",
 			"AXIOS",
-			"TANSTACK QUERY","JWT"
+			"TANSTACK QUERY",
+			"JWT"
 		],
 		"projectInfo": {
 			"orderDate": "24.12.2019",
@@ -138,6 +164,17 @@
 				"https://i.ibb.co/7tysd4c/support-ticket-response.png"
 			]
 		},
+		"links": [
+			["Live Link", "https://support-system-d49af.web.app/"],
+			[
+				"GitHub Server",
+				"https://github.com/mgrakib/support-portal-server"
+			],
+			[
+				"GitHub Client",
+				"https://github.com/mgrakib/support-portal-client"
+			]
+		],
 		"clientReviews": [
 			{
 				"clientName": "Paul Trueman",
@@ -155,6 +192,4 @@
 			}
 		]
 	}
-     
-   
 ]
