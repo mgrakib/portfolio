@@ -62,8 +62,8 @@ const PricePlan = () => {
 						<ul className='flex flex-col items-center'>
 							<li className='available'>Ui Design</li>
 							<li className='available'>Web Development</li>
-							<li className='unavailable'>Logo design</li>
-							<li className='unavailable'>SEO optimization</li>
+							<li className='available'>Logo design</li>
+							<li className='available'>SEO optimization</li>
 							<li className='unavailable'>
 								WordPress integration
 							</li>
@@ -94,11 +94,9 @@ const PricePlan = () => {
 						<ul className='flex flex-col items-center'>
 							<li className='available'>Ui Design</li>
 							<li className='available'>Web Development</li>
-							<li className='unavailable'>Logo design</li>
-							<li className='unavailable'>SEO optimization</li>
-							<li className='unavailable'>
-								WordPress integration
-							</li>
+							<li className='available'>Logo design</li>
+							<li className='available'>SEO optimization</li>
+							<li className='available'>WordPress integration</li>
 						</ul>
 					</div>
 					<button className='text-brand-color font-[600] flex items-center group mt-2'>

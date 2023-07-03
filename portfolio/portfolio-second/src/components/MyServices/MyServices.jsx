@@ -9,6 +9,7 @@ import SectionTitle from "../SectionTitle/SectionTitle";
 AOS.init();
 
 import Tilt from "react-parallax-tilt";
+import { Link } from "react-router-dom";
 
 const MyServices = () => {
 	return (
@@ -33,12 +34,12 @@ const MyServices = () => {
 									presence and drives user engagement.
 								</p>
 
-								<button className='text-brand-color font-[600] flex items-center group'>
+								<Link to="/contact" className='text-brand-color font-[600] flex items-center group'>
 									Let's Talk{" "}
 									<span className='group-hover:ml-1 duration-700'>
 										<BiChevronRight />{" "}
 									</span>
-								</button>
+								</Link>
 							</div>
 						</div>
 					</Tilt>
@@ -60,12 +61,12 @@ const MyServices = () => {
 									concept to deployment.
 								</p>
 
-								<button className='text-brand-color font-[600] flex items-center group'>
+								<Link to="/contact" className='text-brand-color font-[600] flex items-center group'>
 									Let's Talk{" "}
 									<span className='group-hover:ml-1 duration-700'>
 										<BiChevronRight />{" "}
 									</span>
-								</button>
+								</Link>
 							</div>
 						</div>
 					</Tilt>
@@ -88,12 +89,12 @@ const MyServices = () => {
 									expectations.
 								</p>
 
-								<button className='text-brand-color font-[600] flex items-center group'>
+								<Link to="/contact" className='text-brand-color font-[600] flex items-center group'>
 									Let's Talk{" "}
 									<span className='group-hover:ml-1 duration-700'>
 										<BiChevronRight />{" "}
 									</span>
-								</button>
+								</Link>
 							</div>
 						</div>
 					</Tilt>
@@ -115,12 +116,12 @@ const MyServices = () => {
 									lasting impression on your audience.
 								</p>
 
-								<button className='text-brand-color font-[600] flex items-center group'>
+								<Link to="/contact" className='text-brand-color font-[600] flex items-center group'>
 									Let's Talk{" "}
 									<span className='group-hover:ml-1 duration-700'>
 										<BiChevronRight />{" "}
 									</span>
-								</button>
+								</Link>
 							</div>
 						</div>
 					</Tilt>
@@ -141,12 +142,12 @@ const MyServices = () => {
 									scalability of your application.
 								</p>
 
-								<button className='text-brand-color font-[600] flex items-center group'>
+								<Link to="/contact" className='text-brand-color font-[600] flex items-center group'>
 									Let's Talk{" "}
 									<span className='group-hover:ml-1 duration-700'>
 										<BiChevronRight />{" "}
 									</span>
-								</button>
+								</Link>
 							</div>
 						</div>
 					</Tilt>
@@ -168,12 +169,12 @@ const MyServices = () => {
 									operations.
 								</p>
 
-								<button className='text-brand-color font-[600] flex items-center group'>
+								<Link to="/contact" className='text-brand-color font-[600] flex items-center group'>
 									Let's Talk{" "}
 									<span className='group-hover:ml-1 duration-700'>
 										<BiChevronRight />{" "}
 									</span>
-								</button>
+								</Link>
 							</div>
 						</div>
 					</Tilt>

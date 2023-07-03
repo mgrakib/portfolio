@@ -11,7 +11,7 @@ const Experience = () => {
 				<div className='flex items-center gap-2 md:gap-3 w-1/2 md:w-1/4'>
 					<h4 className='text-brand-color w-1/4 flex items-center gap-1'>
 						<AnimatedNumbers
-							animateToNumber={10}
+							animateToNumber={6}
 							fontStyle={{ fontSize: 22 }}
 							configs={[
 								{ mass: 1, tension: 220, friction: 100 },
@@ -24,13 +24,13 @@ const Experience = () => {
 						></AnimatedNumbers>{" "}
 						+
 					</h4>
-					<h6 className='flex-1'>Years Experience</h6>
+					<h6 className='flex-1'>Months Experience</h6>
 				</div>
 				<div className='flex items-center gap-2 md:gap-3 w-1/2  md:w-1/4'>
 					<h4 className='text-brand-color w-1/4'>
 						<AnimatedNumbers
 							includeComma
-							animateToNumber={143}
+							animateToNumber={10}
 							fontStyle={{ fontSize: 22 }}
 							configs={[
 								{ mass: 1, tension: 220, friction: 100 },
@@ -48,7 +48,7 @@ const Experience = () => {
 					<h4 className='text-brand-color w-1/4'>
 						<AnimatedNumbers
 							includeComma
-							animateToNumber={114}
+							animateToNumber={1}
 							fontStyle={{ fontSize: 22 }}
 							configs={[
 								{ mass: 1, tension: 220, friction: 100 },
@@ -65,7 +65,7 @@ const Experience = () => {
 				<div className='flex items-center gap-2 md:gap-3 w-1/2  md:w-1/4'>
 					<h4 className='text-brand-color w-1/4 flex items-center gap-1'>
 						<AnimatedNumbers
-							animateToNumber={10}
+							animateToNumber={1}
 							fontStyle={{ fontSize: 22 }}
 							configs={(number, index) => {
 								return {

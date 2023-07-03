@@ -13,7 +13,10 @@ AOS.init();
 import emailjs from "@emailjs/browser";
 import { useRef, useState } from "react";
 import Swal from "sweetalert2";
+import useAuth from "../../hooks/useAuth";
 const Contact = () => {
+	const { setRouteName } = useAuth();
+	setRouteName('Contact');
 	const [process, setProcess]= useState(false)
 	const form = useRef();
 	const sendEmail = e => {
